@@ -1,7 +1,13 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
 <h1>Arek's Portfolio</h1>
 {% load static %}
 
-<img src="{% static 'portfolio\HPE_logo.jpg' %}" height="400" width="800">
+
+<a href="{% static 'portfolio/CV.pdf' %}">CV</a>
+
+<img src="{% static 'portfolio/HPE_logo.jpg' %}" height="400" width="800">
 {% for project in projects %}
 
 <h2>{{ project.title }}</h2>
@@ -12,3 +18,7 @@
 {% endif %}
 
 {% endfor %}
+  </body>
+</html>
+
+{% endblock %}
