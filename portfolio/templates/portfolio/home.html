@@ -8,13 +8,21 @@
             <p class = code-text>Hi, my name is</p>
             <h1>Arkadiusz Bauer</h1>
             <h4>Software QA Intern at Hewlett Packard Enterprise</h4>
-            <p>A Computer Science student at the University of Nottingham. Currently in my industry year for Hewlett Packard Enterprise as a Software Quality Assurance intern.</p>
+            <p>A Computer Science student at the University of Nottingham. Currently in my industry year at Hewlett Packard Enterprise as a Software Quality Assurance intern.</p>
             <br>
+            <!-- Here i would like to add links to linkedin and github via icons -->
             <br> <br>
-        </div>
-        </div>
         <br> 
-
+        </div>
+        </div>
+        <div class="about-me">
+            <h2>About Me</h2>
+            {% for intro in intros %}
+            <p>{{ intro.description }}</p>
+        </div>
+            <img src="{{ intro.image.url}}" class="profile-pic">
+            {% endfor %}
+        </div>
         <!--
         {% for project in projects %}
         <h2>{{ project.title }}</h2>
