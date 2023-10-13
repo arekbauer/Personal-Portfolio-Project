@@ -115,7 +115,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.about-me h2 {
+.subtitles h2 {
     color: var(--lighter-blue);
     font-family: var(--default-font);
     font-weight: bold;
@@ -129,16 +129,44 @@ body {
     text-wrap: balance;
     float: left;
     width: 50%;
-    padding: 5px;
 }
 
 .profile-pic {
-    height: 400px;
-    width: 350px;
+    max-width: 100%;
+    height: auto;
+    width: 32%;
     float:right;
     padding: 5px;
     object-fit: contain;
-    margin-top: 49%;
-    margin-right: 20%;
+    position:relative;
+    top: -43px;
+    
+    border-radius: 4%;
+    border: 1px solid var(--cream);
+}
+
+b {
+   color: var(--cream);
+   font-family: var(--default-font);
+   font-weight: 600;
+}
+
+hr {
+    color: var(--cream);
+    width: 50%;
+    margin-top: -3px;
+}
+
+/* CSS for the experience section*/
+.experience {
+    position: absolute;
+    float: left;
+    margin: auto;
+    width: 60%;
+    top: 250%;
+    left: 50%;
+    padding-bottom: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 

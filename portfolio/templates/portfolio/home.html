@@ -16,12 +16,17 @@
         </div>
         </div>
         <div class="about-me">
-            <h2>About Me</h2>
+            <h2 class="subtitles">About Me</h2>
+            <hr noshade>
             {% for intro in intros %}
-            <p>{{ intro.description }}</p>
-        </div>
+            <p>{{ intro.description|safe }}</p>
             <img src="{{ intro.image.url}}" class="profile-pic">
             {% endfor %}
+        </div>
+        </div>
+        <div class="experience">
+            <h2>Timeline</h2>
+            <hr noshade>
         </div>
         <!--
         {% for project in projects %}
