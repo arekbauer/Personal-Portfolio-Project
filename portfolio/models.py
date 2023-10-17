@@ -11,7 +11,8 @@ class Intro(models.Model):
     image = models.ImageField(upload_to='portfolio/images/', null=True)
     
 class Timeline(models.Model):
-    title = models.CharField(max_length=25)
+    title = models.CharField(max_length=30)
+    subtitle = models.CharField(max_length = 30, null=True)
     start_date = models.DateField()
     end_date = models.DateField(null=True)
     description = models.TextField()
