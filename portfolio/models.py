@@ -13,6 +13,10 @@ class Intro(models.Model):
 class Timeline(models.Model):
     title = models.CharField(max_length=30)
     subtitle = models.CharField(max_length = 30, null=True)
-    start_date = models.DateField()
-    end_date = models.DateField(null=True)
+    start_date = models.PositiveSmallIntegerField()
+    end_date = models.PositiveSmallIntegerField(blank=True, null=True)
     description = models.TextField()
+    
+    @property
+    def end_date_is_null(self):
+        return self.end_date or "Present"
