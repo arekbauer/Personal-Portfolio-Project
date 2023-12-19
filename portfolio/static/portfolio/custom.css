@@ -257,3 +257,15 @@ hr {
     background-color: var(--lighter-blue);
 }
 
+/*CSS for projects section*/
+.projects {
+    position: absolute;
+    float: left;
+    margin: auto;
+    width: 60%;
+    top: 425%;
+    left: 50%;
+    padding-bottom: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
