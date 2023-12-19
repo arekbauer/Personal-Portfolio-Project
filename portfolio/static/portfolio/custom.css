@@ -16,6 +16,23 @@ body {
     font-weight: 400;
 }
 
+.titles h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+
+    color: var(--cream);
+    font-family: var(--code-font);
+    font-weight: 400;
+    font-size: 4.5em; 
+}
+
+.about-me .titles h1 {
+    margin-top: 25rem;
+}
+
 .intro {
     position: absolute;
     float: left;
@@ -123,38 +140,37 @@ body {
 }
 
 .about-me p {
-    color: var(--lighest-blue);
+    color: var(--light-blue);
     font-family: var(--default-font);
-    font-weight: 300;
+    font-weight: 400;
     text-wrap: balance;
     float: left;
     width: 50%;
+    margin-top: 3%;
+    font-size: larger;
 }
 
 .profile-pic {
     max-width: 100%;
     height: auto;
-    width: 32%;
+    width: 30%;
     float:right;
     padding: 5px;
     object-fit: contain;
     position:relative;
-    top: -43px;
-    
-    border-radius: 4%;
-    border: 1px solid var(--cream);
+    top: 45%;
 }
 
 b {
-   color: var(--cream);
+   color: var(--lighter-blue);
    font-family: var(--default-font);
-   font-weight: 600;
+   font-weight: 700;
 }
 
 hr {
-    color: var(--cream);
-    width: 50%;
-    margin-top: -3px;
+    width: 100%;
+    margin-top: -0.6rem;
+    border: 1px solid var(--cream); 
 }
 
 /* CSS for the experience section*/
@@ -168,6 +184,10 @@ hr {
     padding-bottom: 10%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+}
+
+.experience .titles h1 {
+    margin-top: 60rem;
 }
 /* Place */
 .contents h1 { 
@@ -237,3 +257,33 @@ hr {
     background-color: var(--lighter-blue);
 }
 
+/*CSS for projects section*/
+.projects {
+    position: absolute;
+    float: left;
+    margin: auto;
+    width: 60%;
+    top: 425%;
+    left: 50%;
+    padding-bottom: 10%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Title */
+.projects h1 { 
+    color: var(--lighest-blue);
+    font-family: var(--default-font);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* Description */
+.projects p {
+    color: var(--light-blue);
+    font-family: var(--default-font);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-wrap: balance;
+}
