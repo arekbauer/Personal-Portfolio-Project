@@ -14,16 +14,20 @@
         <br> 
         </div>
         <div class="about-me">
-            <h2 class="subtitles">About Me</h2>
-            <hr noshade>
+            <div class="titles">
+                <h1>About Me</h1>
+                <hr noshade>
+            </div>
             {% for intro in intros %}
             <p>{{ intro.description|safe }}</p>
             <img src="{{ intro.image.url}}" class="profile-pic">
             {% endfor %}
         </div>
         <div class="experience">
-            <h2 class="subtitles">Timeline</h2>
-            <hr noshade>
+            <div class="titles">
+                <h1>Timeline</h1>
+                <hr noshade>
+            </div>
             <div class="row">
                 {% for timeline in timelines %}
                 <div class="contents"> 
