@@ -5,6 +5,10 @@ class Project(models.Model):
     description = models.CharField(max_length=250)
     image = models.ImageField(upload_to='portfolio/images/')
     url = models.URLField(blank=True)
+    skill1 = models.CharField(max_length=16, null=True, blank=True)
+    skill2 = models.CharField(max_length=16, null=True, blank=True)
+    skill3 = models.CharField(max_length=16, null=True, blank=True)
+    skill4 = models.CharField(max_length=16, null=True, blank=True)
     
 class Intro(models.Model):
     description = models.TextField()

@@ -21,8 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-
     color: var(--cream);
     font-family: var(--code-font);
     font-weight: 400;
@@ -270,8 +268,12 @@ hr {
     transform: translate(-50%, -50%);
 }
 
+.projects .titles h1 {
+    margin-top: 20rem;
+}
+
 /* Title */
-.projects h1 { 
+.projects .all-items h1 { 
     color: var(--lighest-blue);
     font-family: var(--default-font);
     font-weight: 700;
@@ -279,7 +281,7 @@ hr {
 }
 
 /* Description */
-.projects p {
+.projects .all-items p {
     color: var(--light-blue);
     font-family: var(--default-font);
     font-weight: 400;
