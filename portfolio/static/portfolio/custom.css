@@ -269,3 +269,21 @@ hr {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+
+/* Title */
+.projects h1 { 
+    color: var(--lighest-blue);
+    font-family: var(--default-font);
+    font-weight: 700;
+    font-size: 26px;
+}
+
+/* Description */
+.projects p {
+    color: var(--light-blue);
+    font-family: var(--default-font);
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0;
+    text-wrap: balance;
+}
