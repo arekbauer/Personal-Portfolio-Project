@@ -41,45 +41,42 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="projects">
+        <section class="projects">
             <div class="titles">
                 <h1>Projects</h1>
                 <hr noshade>
             </div>
             <div class="all-items">
-                <div class="item">
-                    {% for project in projects %}
-                    <div class ="left">
+                {% for project in projects %}
+                <article class="item">
+                    <div class="left">
+                        {% if project.url %}
+                        <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
+                        {% endif %}
+                    </div>
+                    <div class="right">
                         <h1>{{ project.title }}</h1>
                         <p>{{ project.description }}</p>
-                        <div class="skills">
-                            <ul>
-                                {% if project.skill1 %}
-                                <li>{{ project.skill1 }}</li>
-                                {% endif %}
-                                {% if project.skill2 %}
-                                <li>{{ project.skill2 }}</li>
-                                {% endif %}
-                                {% if project.skill3 %}
-                                <li>{{ project.skill3 }}</li>
-                                {% endif %}
-                                {% if project.skill4 %}
-                                <li>{{ project.skill4 }}</li>
-                                {% endif %}
-                            </ul>
-                            <div class="right">
-                                <div class="img">
-                                {% if project.url %}
-                                <a href="{{ project.url }}"><img src="{{ project.image.url }}" height="100" width="170"></a>
-                                {% endif %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
+                        <ul>
+                            {% if project.skill1 %}
+                            <li>{{ project.skill1 }}</li>
+                            {% endif %}
+                            {% if project.skill2 %}
+                            <li>{{ project.skill2 }}</li>
+                            {% endif %}
+                            {% if project.skill3 %}
+                            <li>{{ project.skill3 }}</li>
+                            {% endif %}                                    
+                            {% if project.skill4 %}
+                            <li>{{ project.skill4 }}</li>
+                            {% endif %}
+                        </ul>   
+                    </div>       
+                </article>
+                {% endfor %}
             </div>
-        </div>
+            
+        </section>
   </body>
 </html>
 
