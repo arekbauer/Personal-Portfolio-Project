@@ -46,16 +46,16 @@
                 <h1>Projects</h1>
                 <hr noshade>
             </div>
-            <div class="all-items">
+            <div class="container">
                 {% for project in projects %}
-                <article class="item">
-                    <div class="left">
-                        {% if project.url %}
-                        <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
-                        {% endif %}
-                    </div>
-                    <div class="right">
+                <article class="content">
+                    {% if project.url %}
+                    <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
+                    {% endif %}
+                    <div class="info">
                         <h1>{{ project.title }}</h1>
+                    </div>
+                    <div class="extra-info">
                         <p>{{ project.description }}</p>
                         <ul>
                             {% if project.skill1 %}
@@ -74,8 +74,7 @@
                     </div>       
                 </article>
                 {% endfor %}
-            </div>
-            
+            </div> 
         </section>
   </body>
 </html>
