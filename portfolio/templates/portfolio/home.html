@@ -48,16 +48,15 @@
             </div>
             <div class="container">
                 {% for project in projects %}
-                <article class="content">
-                    {% if project.url %}
-                    <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
-                    {% endif %}
-                    <div class="info">
-                        <h1>{{ project.title }}</h1>
-                    </div>
-                    <div class="extra-info">
-                        <p>{{ project.description }}</p>
-                        <ul>
+                <div class="row">
+                    <div class="image">
+                        {% if project.url %}
+                        <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
+                        {% endif %}
+                        <div class="details">
+                            <h1>{{ project.title }}</h1>
+                            <p>{{ project.description }}</p>
+                            <ul>
                             {% if project.skill1 %}
                             <li>{{ project.skill1 }}</li>
                             {% endif %}
@@ -70,11 +69,11 @@
                             {% if project.skill4 %}
                             <li>{{ project.skill4 }}</li>
                             {% endif %}
-                        </ul>   
-                    </div>       
-                </article>
+                        </div>
+                    </div>
+                </div>
                 {% endfor %}
-            </div> 
+            </div>
         </section>
   </body>
 </html>
