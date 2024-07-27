@@ -3,78 +3,9 @@
 {% load static %}
 <html>
     <body>
-        <div class="intro">
-            <p class = code-text>Hi, my name is</p>
-            <h1>Arkadiusz Bauer</h1>
-            <h4>Software QA Intern at Hewlett Packard Enterprise</h4>
-            <p>A Computer Science student at the University of Nottingham. Currently in my industry year at Hewlett Packard Enterprise as a Software Quality Assurance intern.</p>
-            <br>
-            <!-- Here i would like to add links to linkedin and github via icons -->
-            <br> <br>
-        <br> 
-        </div>
-        <div class="about-me">
-            <div class="titles">
-                <h1>About Me</h1>
-                <hr noshade>
-            </div>
-            {% for intro in intros %}
-            <p>{{ intro.description|safe }}</p>
-            <img src="{{ intro.image.url}}" class="profile-pic">
-            {% endfor %}
-        </div>
-        <div class="experience">
-            <div class="titles">
-                <h1>Timeline</h1>
-                <hr noshade>
-            </div>
-            <div class="row">
-                {% for timeline in timelines %}
-                <div class="contents"> 
-                    <div class="box">
-                        <h4>{{timeline.start_date | safe}} - {{timeline.end_date | safe}}</h4>
-                        <h1>{{timeline.title | safe}}</h1>
-                        <h2>{{timeline.subtitle | safe}}</h2>
-                        <p>{{timeline.description | safe}}</p>
-                    </div>
-                </div> 
-                {% endfor %}
-            </div>
-        </div>
-        <section class="projects">
-            <div class="titles">
-                <h1>Projects</h1>
-                <hr noshade>
-            </div>
-            <div class="container">
-                {% for project in projects %}
-                <div class="row">
-                    <div class="image">
-                        {% if project.url %}
-                        <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
-                        {% endif %}
-                        <div class="details">
-                            <h1>{{ project.title }}</h1>
-                            <p>{{ project.description }}</p>
-                            <ul>
-                            {% if project.skill1 %}
-                            <li>{{ project.skill1 }}</li>
-                            {% endif %}
-                            {% if project.skill2 %}
-                            <li>{{ project.skill2 }}</li>
-                            {% endif %}
-                            {% if project.skill3 %}
-                            <li>{{ project.skill3 }}</li>
-                            {% endif %}                                    
-                            {% if project.skill4 %}
-                            <li>{{ project.skill4 }}</li>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </section>
+        {% include 'portfolio/about-me.html' %}
+        {% include 'portfolio/timeline.html' %}
+        {% include 'portfolio/projects.html' %}
   </body>
 </html>
 

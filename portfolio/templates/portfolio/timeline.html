@@ -1,0 +1,20 @@
+<section>
+    <div class="experience">
+        <div class="titles">
+            <h1>Timeline</h1>
+            <hr noshade>
+        </div>
+        <div class="row">
+            {% for timeline in timelines %}
+            <div class="contents"> 
+                <div class="box">
+                    <h4>{{timeline.start_date | safe}} - {{timeline.end_date | safe}}</h4>
+                    <h1>{{timeline.title | safe}}</h1>
+                    <h2>{{timeline.subtitle | safe}}</h2>
+                    <p>{{timeline.description | safe}}</p>
+                </div>
+            </div> 
+            {% endfor %}
+        </div>
+    </div>
+</section>
