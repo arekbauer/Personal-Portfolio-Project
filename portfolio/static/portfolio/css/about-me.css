@@ -1,43 +1,22 @@
 /* CSS for the about me section*/
-.about-me {
-    position: absolute;
-    float: left;
-    margin: auto;
-    width: 60%;
-    top: 150%;
-    left: 50%;
-    padding-bottom: 10%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.subtitles h2 {
+.intro h3 {
     color: var(--lighter-blue);
     font-family: var(--default-font);
     font-weight: bold;
-    font-size: 30px; 
+    font-size: 3.4rem;
 }
 
 .about-me p {
-    color: var(--light-blue);
+    color: var(--clear-blue);
     font-family: var(--default-font);
     font-weight: 400;
-    text-wrap: balance;
-    float: left;
-    width: 50%;
-    margin-top: 3%;
-    font-size: larger;
+    font-size: 1.14rem;
+    padding-top: 0.1rem;
 }
 
 .profile-pic {
-    max-width: 100%;
-    height: auto;
-    width: 30%;
-    float:right;
-    padding: 5px;
-    object-fit: contain;
-    position:relative;
-    top: 45%;
+    max-width: 95%;
+    border-radius: 5px;
 }
 
 b {
@@ -50,4 +29,52 @@ hr {
     width: 100%;
     margin-top: -0.6rem;
     border: 1px solid var(--cream); 
+}
+
+.icons ul{ 
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    padding-top: 0.5em;
+    padding-left: 0.05em;
+    margin: 0;
+    display: flex; /* Makes the list items display horizontally */
+}
+
+/* Optional: Add some spacing between the items */
+.icons li {
+    margin-right: 1.5em;
+    font-size: 130%;
+}
+
+.fa-brands:hover, .fa-regular:hover{
+    color: var(--cream) !important;
+}
+
+/* Container to hold the two sections */
+.container {
+    display: flex;
+    width: 100%;
+    height: 80vh;  
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left section taking 2/3 of the width */
+.left {
+    flex: 2;
+    padding: 20px;
+    /* border: solid white;
+    border-width: 1px; */
+    /* padding-top: 8%; */
+   
+}
+
+/* Right section taking 1/3 of the width */
+.right {
+    flex: 1;
+    padding: 20px;
+    /* border: solid white;
+    border-width: 1px; */
+    /* padding-top: 2%; */
 }
