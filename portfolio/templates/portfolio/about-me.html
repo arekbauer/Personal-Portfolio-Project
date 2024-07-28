@@ -1,11 +1,47 @@
 <section>
+    <div class="container">
+        <div class="left">
+            <div class="intro">
+                <h3>Hello! I'm Arek</h3>
+            </div>
+            <div class="about-me">
+                {% for intro in intros %}
+                <p>{{ intro.description|safe }}</p>
+                {% endfor %}
+            </div>
+            <div class="icons">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/arkadiusz-bauer/" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-xl" style="color: #ccd6f6;"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/arekbauer" target="_blank">
+                    <i class="fa-brands fa-github fa-xl" style="color: #ccd6f6;"></i></a>
+                </li>
+                <li><i class="fa-regular fa-envelope fa-xl" style="color: #ccd6f6;"></i></li>
+            </ul>
+            </div>
+        </div>
+        <div class="right">
+            {% for intro in intros %}
+            <img src="{{ intro.image.url}}" class="profile-pic">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- <section>
     <div class="intro">
         <p class = code-text>Hi, my name is</p>
         <h1>Arkadiusz Bauer</h1>
         <h4>Software QA Intern at Hewlett Packard Enterprise</h4>
         <p>A Computer Science student at the University of Nottingham. Currently in my industry year at Hewlett Packard Enterprise as a Software Quality Assurance intern.</p>
         <br>
-        <!-- Here i would like to add links to linkedin and github via icons -->
+        Here i would like to add links to linkedin and github via icons 
         <br> <br>
     <br> 
     </div>
@@ -19,4 +55,4 @@
         <img src="{{ intro.image.url}}" class="profile-pic">
         {% endfor %}
     </div>
-</section>
+</section> -->

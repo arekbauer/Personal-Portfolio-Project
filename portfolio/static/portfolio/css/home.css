@@ -4,6 +4,7 @@
     --light-blue: #8892B0;
     --lighter-blue: #CCD6F6;
     --lighest-blue: #E6F1FF;
+    --clear-blue:#94A3B8;
     --cream: #64FFDA;
     --code-font: 'Inconsolata', monospace; /*400, 600 */
     --default-font:'Roboto', sans-serif; /*300, 400, 700 */
@@ -14,6 +15,8 @@ body {
     background-color: var(--darkest-blue);
     font-family: var(--default-font);
     font-weight: 400;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
 }
 
 .titles h1 {
@@ -27,42 +30,6 @@ body {
     font-size: 4.5em; 
 }
 
-.about-me .titles h1 {
-    margin-top: 25rem;
-}
-
-.intro {
-    position: absolute;
-    float: left;
-    margin: auto;
-    width: 60%;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.intro h1 {
-    color: var(--lighter-blue);
-    font-family: var(--default-font);
-    font-weight: bold;
-    font-size: 100px;
-}
-
-.intro p {
-    color: var(--cream);
-    font-family: var(--code-font);
-    font-weight: 400;
-    margin-bottom: 0;
-    text-wrap: balance;
-}
-
-.intro h4 {
-    color: var(--lighest-blue);
-    font-family: var(--default-font);
-    font-weight: 300;
-}
-
 .right-text {
     color: white;
     font-family: var(--default-font);
@@ -74,6 +41,9 @@ body {
     display: flex;
     list-style: none;
     background-color: #0A192F;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar li {
@@ -110,11 +80,27 @@ body {
     border: solid 1px var(--darkest-blue);
 }
 
-.logo {
-    width: 100px;
-    height: 25px;
-    margin-right: auto;
-    margin-left: 30px;
+.navbar h3 {
+    color: #64FFDA;
+    font-family:var(--code-font);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 0.75em;
+    margin-top: 0.5rem;
+    font-size: 150%;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section { 
+    height: 100vh;
+    scroll-snap-align: start;
+    &:first-child{
+        scroll-margin-top: 100px;
+    }
 }
 
 /*media controls*/
@@ -123,3 +109,8 @@ body {
         flex-direction: column;
     }
 }
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ body::-webkit-scrollbar {
+    display: none;
+  }
