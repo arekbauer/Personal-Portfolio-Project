@@ -1,96 +1,61 @@
-/*CSS for projects section*/
-.projects {
-    position: absolute;
-    float: left;
-    width: 60%;
-    top: 425%;
-    left: 50%;
-    padding-bottom: 50%;
-    transform: translate(-50%, -50%);
-
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.container-projects{
+    margin: 0 auto;
+    width: 70%;
+    margin-left:15%;
+    height: 90vh;    
+    border: solid white;
+    border-width: 1px; 
 }
 
-.projects .container {
-    margin: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 90px;
-}
-
-.projects .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    border: 2px solid var(--cream);
-
-    align-items: center;
+.container-projects header {
+    margin: 0;
     text-align: center;
-
-    width: 100%;
+    padding-top: 2%;
 }
 
-.projects .image {
+.container-projects h1 {
+    color: var(--lighter-blue);
+    font-family: var(--default-font);
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+
+.project-filter-buttons {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.project-filter-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--cream);
+    cursor: pointer;
+    outline: none;
+    color: var(--darkest-blue);
+}
+
+.project-filter-buttons button:hover {
+    background: var(--clear-blue);
+}
+
+.project-filter-buttons button.active-filter {
     background: var(--mid-blue);
-    padding: 0;
-    position: relative;
-    flex: 1;
-    max-width: 500px;
-    height: 100%;
-    margin: 1rem;
-    overflow: hidden;
-    flex: 1;
-    margin: 20px 20px;
+    border: 1px solid var(--lighter-blue);
+    color: var(--cream);
 }
 
-.projects .image img {
-    opacity: 0.8;
-    position: relative;
-    vertical-align: top;
-    transition: 0.6s;
-    transition-property: opacity;
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+.projects-grid {
+    display: flex;
+    border: 1px solid white;
 }
 
-.projects .image:hover img {
-    opacity: 1;
+.project-card {
+    border: 1px solid #ddd; /* Light grey border */
+    
 }
 
-.projects .details {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.projects .titles h1 {
-    margin-top: 20rem;
-}
-
-/* Title */
-.projects .details h1 { 
-    color: var(--lighest-blue);
-    font-family: var(--default-font);
-    font-weight: 700;
-    font-size: 26px;
-    margin-top: 70px;
-}
-
-/* Description */
-.projects .details p {
-    color: var(--light-blue);
-    font-family: var(--default-font);
-    font-weight: 400;
-    font-size: 15px;
-    margin-bottom: 0;
-    text-wrap: balance;
+.project-card img {
+    max-width: 20%;
 }

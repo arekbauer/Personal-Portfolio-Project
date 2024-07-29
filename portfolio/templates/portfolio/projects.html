@@ -1,19 +1,25 @@
-<section class="projects">
-    <div class="titles">
-        <h1>Projects</h1>
-        <hr noshade>
+<div class="container-projects">
+    <header>
+      <h1>Projects</h1>
+    </header>
+    <div class="project-filter-buttons">
+      <button data-filter="" class="filter-button clear-button active-filter">All</button>
+      <button data-filter="react" class="filter-button">React</button>
+      <button data-filter="angular" class="filter-button">Angular</button>
+      <button data-filter="bootstrap" class="filter-button">Bootstrap</button>
     </div>
-    <div class="container">
+    
+    <div class="projects-grid">
         {% for project in projects %}
-        <div class="row">
-            <div class="image">
-                {% if project.url %}
-                <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
-                {% endif %}
-                <div class="details">
-                    <h1>{{ project.title }}</h1>
-                    <p>{{ project.description }}</p>
-                    <ul>
+        <div class="project-card">
+            {% if project.url %}
+            <a href="{{ project.url }}"><img src="{{ project.image.url }}"></a>
+            {% endif %}
+            <div class="project-details">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                <ul>
+                <div class="skills">
                     {% if project.skill1 %}
                     <li>{{ project.skill1 }}</li>
                     {% endif %}
@@ -29,6 +35,18 @@
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
-</section>
+    
+    {% endfor %}
+</div>
+
+<!-- <div class="projects-grid">
+    <div class="project mongodb react bootstrap">
+      <img src="http://placehold.it/350x250" alt="" class="project-image" />
+      <h2 class="project-title">Project title</h2>
+      <div class="badges">
+        <span>react</span>
+        <span>mongodb</span>
+        <span>bootstrap</span>
+      </div>
+  </div> -->
