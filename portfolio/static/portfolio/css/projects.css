@@ -13,7 +13,7 @@ a {
 .container-projects header {
     margin: 0;
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1.5%;
 }
 
 .container-projects h1 {
@@ -54,17 +54,16 @@ a {
     /* border: 1px solid yellow; */
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 20px;
-    overflow: scroll;
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 80vh;
 }
 
 .project-card {
-    background-color: var(--mid-blue);
-    
     transition: 0.3s;
     min-height: 300px;
     min-width: 250px;
-    border-radius: 4px;
+    border-radius: 5px;
     width: 28%;
     margin: 10px;
 }
@@ -76,7 +75,8 @@ a {
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(2,12,27,0.7);
+    /* box-shadow: 0 8px 16px 0 rgba(2,12,27,0.7); */
+    background-color: var(--mid-blue);
     color: var(--cream);
 }
 
