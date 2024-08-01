@@ -57,12 +57,13 @@ a {
 
 .projects-grid {
     display: flex;
-    /* border: 1px solid yellow; */
+    /* border: 1px solid yellow;    */
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 10px;
     overflow: auto;
     max-height: 80vh;
+    padding-left: 6%;
 }
 
 .project-card {
