@@ -1,4 +1,3 @@
-console.log('Function is running');
 const iso = new Isotope('.projects-grid');
 const filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter-button'));
 
@@ -14,5 +13,3 @@ filterButtons.map(button => {
     iso.layout();
   });
 });
-
-// Not working, check YouTube vid

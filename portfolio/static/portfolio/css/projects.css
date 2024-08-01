@@ -28,15 +28,21 @@ a {
     margin-top: 1%;
 }
 
-.project-filter-buttons button {
-    margin: 5px;
-    padding: 10px 15px 10px 15px;
-    border: none;
-    border-radius: 5px;
-    background: var(--cream);
-    cursor: pointer;
-    outline: none;
-    color: var(--darkest-blue);
+.project-filter-buttons {
+    button {
+        margin: 5px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background: var(--cream);
+        cursor: pointer;
+        outline: none;
+        color: var(--darkest-blue);
+
+        &:first-child {
+            background: var(--lightest-blue); 
+        }
+    }
 }
 
 .project-filter-buttons button:hover {
