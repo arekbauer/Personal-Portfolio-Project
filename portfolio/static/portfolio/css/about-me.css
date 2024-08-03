@@ -1,3 +1,7 @@
+.valo-cursor {
+    cursor: url('/static/portfolio/valo-cursor.png'), auto;
+}
+
 /* CSS for the about me section*/
 .left h3 {
     color: var(--lighter-blue);
