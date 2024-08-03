@@ -1,9 +1,10 @@
 /* CSS for the about me section*/
-.intro h3 {
+.left h3 {
     color: var(--lighter-blue);
     font-family: var(--default-font);
     font-weight: bold;
     font-size: 3.4rem;
+    display:inline
 }
 
 .about-me p {
