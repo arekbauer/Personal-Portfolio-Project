@@ -19,6 +19,11 @@ body {
     scrollbar-width: none; /* for Firefox */
 }
 
+a {
+    text-decoration: none;
+    color: #64FFDA;
+}
+
 .titles h1 {
     display: flex;
     justify-content: center;
