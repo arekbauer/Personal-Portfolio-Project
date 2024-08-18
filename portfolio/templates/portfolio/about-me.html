@@ -1,9 +1,7 @@
 <section>
     <div class="container">
         <div class="left">
-            <div class="intro">
-                <h3>Hello! I'm Arek</h3>
-            </div>
+                <h3><span class="highlight">Hello!</span> I'm Arek</h3>
             <div class="about-me">
                 {% for intro in intros %}
                 <p>{{ intro.description|safe }}</p>
@@ -19,7 +17,8 @@
                     <a href="https://github.com/arekbauer" target="_blank">
                     <i class="fa-brands fa-github fa-xl" style="color: #ccd6f6;"></i></a>
                 </li>
-                <li><i class="fa-regular fa-envelope fa-xl" style="color: #ccd6f6;"></i></li>
+                    <a href="mailto:arek.bauer12@gmail.com">
+                <li><i class="fa-regular fa-envelope fa-xl" style="color: #ccd6f6;"></i></li></a>
             </ul>
             </div>
         </div>

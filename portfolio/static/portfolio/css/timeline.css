@@ -16,7 +16,7 @@
 }
 /* Place */
 .contents h1 { 
-    color: var(--lighest-blue);
+    color: var(--lightest-blue);
     font-family: var(--default-font);
     font-weight: 700;
     font-size: 26px;

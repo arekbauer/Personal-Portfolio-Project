@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "isotope-layout": "^3.0.6",
+    "rough-notation": "^0.5.1"
+  }
+}
