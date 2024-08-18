@@ -1,0 +1,18 @@
+<div class="container-experience">
+    <header>
+      <h1>Experience</h1>
+    </header>
+
+    <div class="experience-grid">
+        {% for experience in experiences %}
+        <div class="experience-card">
+            <h2>{{ experience.subtitle }}</h2>
+            <h3>{{ experience.title }}</h3>
+            <p>{{ experience.start_date }} - {{ experience.end_date }}</p>
+            <div class="experience-extra">
+                <p>{{ experience.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

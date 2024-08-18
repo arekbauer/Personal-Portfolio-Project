@@ -1,0 +1,57 @@
+.container-experience{
+    margin: 0 auto;
+    width: 70%;
+    margin-left:15%;
+    height: 90vh;    
+    border-width: 1px; 
+}
+
+.container-experience header {
+    margin: 0;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.container-experience h1 {
+    color: var(--lighter-blue);
+    font-family: var(--default-font);
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+
+.experience-grid {
+    display: flex;
+    border: 1px solid yellow; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 80vh;
+    padding-left: 6%;
+}
+
+.experience-card {
+    border: 1px solid blue; 
+    transition: 0.3s;
+    min-height: 50px;
+    min-width: 250px;
+    border-radius: 5px;
+    width: 28%;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.experience-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.experience-card.expanded .experience-details {
+    max-height: 200px; /* Adjust according to your content */
+}
+
+.experience-card:hover {
+    background-color: #f0f0f0;
+}

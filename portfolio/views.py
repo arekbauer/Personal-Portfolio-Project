@@ -2,7 +2,7 @@ from django.shortcuts import render
 from collections import Counter
 from .models import Project
 from .models import Intro
-from .models import Timeline
+from .models import Experience
 
 # def home(request):
 #     projects = Project.objects.all()
@@ -13,7 +13,7 @@ from .models import Timeline
 def home(request):
     projects = Project.objects.all()
     intros = Intro.objects.all()
-    timelines = Timeline.objects.all()
+    experiences = Experience.objects.all()
     
     all_skills = []
     
@@ -32,6 +32,6 @@ def home(request):
     return render(request, 'portfolio/home.html', {
         'projects': projects,              
         'intros': intros,                  
-        'timelines': timelines,            
+        'experiences': experiences,            
         'most_common_skills': most_common_skills,  
     })
