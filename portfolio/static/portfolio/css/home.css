@@ -19,6 +19,15 @@ body {
     scrollbar-width: none; /* for Firefox */
 }
 
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 2px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue);
+}
+
 a {
     text-decoration: none;
     color: #64FFDA;

@@ -64,6 +64,12 @@ a {
     overflow: auto;
     max-height: 80vh;
     padding-left: 6%;
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .project-card {
