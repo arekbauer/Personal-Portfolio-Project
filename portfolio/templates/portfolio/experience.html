@@ -10,7 +10,7 @@
             <h3>{{ experience.title }}</h3>
             <p>{{ experience.start_date }} - {{ experience.end_date }}</p>
             <div class="experience-extra">
-                <p>{{ experience.description }}</p>
+                <p>{{ experience.description|safe  }}</p>
             </div>
         </div>
         {% endfor %}
