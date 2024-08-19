@@ -79,6 +79,8 @@ a {
     border-radius: 5px;
     width: 28%;
     margin: 10px;
+    text-align: center;
+    /* border: 1px solid var(--mid-blue); need to decide on this */
 }
 
 .project-card img {
@@ -100,12 +102,12 @@ a {
     font-weight: 700;
     font-size: 1.5rem;
     padding-top: 2%;
+    display: inline-block;
 }
 
 .project-card:hover h3 {
     color: var(--cream);
 }
-
 
 .project-card p {
     color: var(--clear-blue);
