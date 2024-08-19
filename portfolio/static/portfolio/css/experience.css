@@ -1,0 +1,94 @@
+.container-experience{
+    margin: 0 auto;
+    width: 70%;
+    margin-left:15%;
+    height: 90vh;    
+    border-width: 1px; 
+}
+
+.container-experience header {
+    margin: 0;
+    text-align: center;
+    padding-top: 1.5%;
+}
+
+.container-experience h1 {
+    color: var(--lighter-blue);
+    font-family: var(--default-font);
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+
+.experience-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: auto;
+    max-height: 80vh;
+}
+
+.experience-card {
+    border: 1px solid var(--mid-blue);  
+    transition: 0.3s;
+    min-width: 250px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 10px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.experience-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.experience-card.expanded .experience-extra {
+    max-height: 500px;
+}
+
+.experience-card:hover {
+    background-color: var(--mid-blue);
+}
+
+.experience-card h2 {
+    color: var(--lightest-blue);
+    text-align: left;
+    font-family: var(--default-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.experience-card h3 {
+    color: var(--light-blue);
+    text-align: left;
+    font-family: var(--default-font);
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 2%;
+}
+
+.experience-card p {
+    color: var(--cream);
+    text-align: right;
+    font-family: var(--code-font);
+    font-weight: 400;
+    padding-right: 2%;
+    margin-bottom: 2%;
+}
+
+.experience-extra p {
+    color: var(--clear-blue);
+    font-family: var(--default-font);
+    font-weight: 300;
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 2%;
+    margin-top: 0;
+}
