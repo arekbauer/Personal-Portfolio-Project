@@ -33,12 +33,11 @@
 .experience-card {
     border: 1px solid var(--mid-blue);  
     transition: 0.3s;
-    min-height: 5px;
     min-width: 250px;
     border-radius: 5px;
-    width: 33%;
+    width: 30%;
     margin: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 }
 
@@ -49,7 +48,7 @@
 }
 
 .experience-card.expanded .experience-extra {
-    max-height: 500px; /* Adjust according to your content */
+    max-height: 500px;
 }
 
 .experience-card:hover {
@@ -84,12 +83,12 @@
     margin-bottom: 2%;
 }
 
-
 .experience-extra p {
     color: var(--clear-blue);
     font-family: var(--default-font);
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     font-size: 0.9rem;
-    margin: 3%;
+    margin: 2%;
+    margin-top: 0;
 }
