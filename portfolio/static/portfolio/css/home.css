@@ -51,22 +51,41 @@ a {
 }
 
 /* CSS for the navigation bar - nav, button and logo*/
-.navbar {
+/* .navbar {
     display: flex;
+    position: fixed;
+    top: 0px;
+    align-items: center;
     list-style: none;
     background-color: #0A192F;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+*/
 
-.navbar li {
+.header {
+    position: fixed;
+    background-color: var(--darkest-blue);
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar a {
     color: #64FFDA;
     font-family:var(--code-font);
     font-weight: 400;
     text-decoration: none;
     padding: 10px 20px;
-}
+} 
 
 .btn {
     font-family: var(--code-font);
@@ -94,7 +113,7 @@ a {
     border: solid 1px var(--darkest-blue);
 }
 
-.navbar h3 {
+.header h3 {
     color: #64FFDA;
     font-family:var(--code-font);
     font-weight: 600;
@@ -113,9 +132,7 @@ html {
 section { 
     height: 100vh;
     scroll-snap-align: start;
-    &:first-child{
-        scroll-margin-top: 100px;
-    }
+    scroll-margin-top: 78px;
 }
 
 /*media controls*/

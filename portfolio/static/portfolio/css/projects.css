@@ -13,7 +13,6 @@ a {
 .container-projects header {
     margin: 0;
     text-align: center;
-    padding-top: 1.5%;
 }
 
 .container-projects h1 {
@@ -62,7 +61,7 @@ a {
     justify-content: center;
     margin-top: 10px;
     overflow: auto;
-    max-height: 80vh;
+    max-height: 70vh;
     padding-left: 6%;
     -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
     scrollbar-width: none;  /* Hide scrollbar in Firefox */
