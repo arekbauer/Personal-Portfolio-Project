@@ -51,19 +51,6 @@ a {
 }
 
 /* CSS for the navigation bar - nav, button and logo*/
-/* .navbar {
-    display: flex;
-    position: fixed;
-    top: 0px;
-    align-items: center;
-    list-style: none;
-    background-color: #0A192F;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-*/
-
 .header {
     position: fixed;
     background-color: var(--darkest-blue);
@@ -133,6 +120,10 @@ section {
     height: 100vh;
     scroll-snap-align: start;
     scroll-margin-top: 78px;
+}
+
+section:last-of-type {
+    height: 94vh;
 }
 
 /*media controls*/
