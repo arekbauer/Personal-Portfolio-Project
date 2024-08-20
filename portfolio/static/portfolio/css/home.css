@@ -73,7 +73,7 @@ a {
 }
 
 .navbar a {
-    color: #64FFDA;
+    color: var(--lighter-blue);
     display: flex;
     font-family:var(--code-font);
     font-weight: 400;
@@ -81,12 +81,16 @@ a {
     padding: 10px 20px;
 } 
 
+.navbar a:hover {
+    color: var(--cream);
+}
+
 .btn {
     font-family: var(--code-font);
     font-weight: 400;
     color: var(--cream);
     background-color: var(--darkest-blue);
-    padding: 10px 20px;
+    padding: 7px 14px;
     border: solid #64ffda 1px;
     border-radius: 5px;
     transition : 795ms;
