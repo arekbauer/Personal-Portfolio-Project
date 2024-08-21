@@ -18,20 +18,32 @@
     <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/experience.css' %}">
   </head>
   <body>
-    <div class="navbar">
+    <header class="header">
       <h3>Arkadiusz Bauer</h3>
-        <ul type=1 class="navbar">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
+        <nav class="navbar">
+          <input type="checkbox" id="sidebar-active">
+          <label for="sidebar-active" class="open-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#64ffda"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </label>
+
+          <label id="overlay" for="sidebar-active"></label>
+          <div class="links-container">
+            <label for="sidebar-active" class="close-sidebar-button">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#64ffda"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+            
+            <a href="#about">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <button class="btn">Resume</button>
-        </ul>
-      </div>
-      {% block content %}{% endblock %}
-      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-      <script src="{% static 'portfolio/js/projects.js' %}"></script>
-      <script src="{% static 'portfolio/js/experience.js' %}"></script>
-      <script type="module" src="{% static 'portfolio/js/about-me.js' %}"></script>
+          </div>
+        </nav>
+      </header>
+    {% block content %}{% endblock %}
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="{% static 'portfolio/js/projects.js' %}"></script>
+    <script src="{% static 'portfolio/js/experience.js' %}"></script>
+    <script type="module" src="{% static 'portfolio/js/about-me.js' %}"></script>
   </body>
 </html>
 
