@@ -170,6 +170,7 @@ section:last-of-type {
     .navbar a {
         box-sizing: border-box;
         height: auto;
+        font-size: 1.2rem;
         padding: 20px 30px;
     }
 
@@ -199,4 +200,14 @@ section:last-of-type {
         left: 0;
         z-index: 9;
     }
+
+    html {
+        scroll-snap-type: none;
+    } /* TODO: Add JS code to fix scrolling issue on Chrome */
+    
+    section { 
+        scroll-snap-align: none;
+        flex-direction: row wra;
+    }
 }
+

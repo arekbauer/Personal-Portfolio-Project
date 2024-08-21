@@ -13,6 +13,7 @@ class Project(models.Model):
 class Intro(models.Model):
     description = models.TextField()
     image = models.ImageField(upload_to='portfolio/images/', null=True)
+    image_small = models.ImageField(upload_to='portfolio/images/', null=True)
     
 class Experience(models.Model):
     title = models.CharField(max_length=30)
