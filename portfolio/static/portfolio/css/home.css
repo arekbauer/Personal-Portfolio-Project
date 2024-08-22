@@ -20,13 +20,18 @@ body {
 }
 
 /*Scrollbar*/
-::-webkit-scrollbar {
+html {
+    -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+/* ::-webkit-scrollbar {
     width: 2px;
 }
    
 ::-webkit-scrollbar-thumb {
     background-color: var(--light-blue);
-}
+} */
 
 a {
     text-decoration: none;
