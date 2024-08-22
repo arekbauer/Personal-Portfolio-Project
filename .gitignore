@@ -1,12 +1,11 @@
-portfolio/__pycache__
-
-db.sqlite3
-
-# Django migrations
-*/migrations/*
-
 # Environment variables file
 .env
 
 # Node modules
 node_modules/
+
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
