@@ -155,6 +155,8 @@ section:last-of-type {
         padding-top: 0;
         padding-bottom: 0;
         height: auto;
+        background-color: var(--mid-blue);
+        box-shadow: -5px 0 5px rgba(0,0,0,0.25);
     }
     .links-container {
         flex-direction: column;
