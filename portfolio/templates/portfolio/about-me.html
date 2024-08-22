@@ -24,34 +24,14 @@
         </div>
         <div class="right">
             {% for intro in intros %}
-            <img src="{{ intro.image.url}}" class="profile-pic">
+            <picture>
+                <source srcset="{{ intro.image_small.url }}" media="(max-width: 770px)">
+                <!-- Wider than 770px -->
+                <source srcset="{{ intro.image.url }}" media="(min-width: 771px)">
+                <!-- Fallback image -->
+                <img src="{{ intro.image.url }}" alt="Responsive Image" class="profile-pic">
+            </picture>
             {% endfor %}
         </div>
     </div>
 </section>
-
-
-
-
-<!-- <section>
-    <div class="intro">
-        <p class = code-text>Hi, my name is</p>
-        <h1>Arkadiusz Bauer</h1>
-        <h4>Software QA Intern at Hewlett Packard Enterprise</h4>
-        <p>A Computer Science student at the University of Nottingham. Currently in my industry year at Hewlett Packard Enterprise as a Software Quality Assurance intern.</p>
-        <br>
-        Here i would like to add links to linkedin and github via icons 
-        <br> <br>
-    <br> 
-    </div>
-    <div class="about-me">
-        <div class="titles">
-            <h1>About Me</h1>
-            <hr noshade>
-        </div>
-        {% for intro in intros %}
-        <p>{{ intro.description|safe }}</p>
-        <img src="{{ intro.image.url}}" class="profile-pic">
-        {% endfor %}
-    </div>
-</section> -->

@@ -4,23 +4,19 @@ from .models import Project
 from .models import Intro
 from .models import Experience
 
-# def home(request):
-#     projects = Project.objects.all()
-#     intros = Intro.objects.all()
-#     timelines = Timeline.objects.all()
-#     return render(request, 'portfolio/home.html', {'projects': projects, 'intros': intros, 'timelines': timelines})
-
 def home(request):
     projects = Project.objects.all()
     intros = Intro.objects.all()
     experiences = Experience.objects.all()
     
     all_skills = []
+    muted_skills = ["C#", "A* Pathfinding"]
     
     for project in projects:
         skills = [project.skill1, project.skill2, project.skill3, project.skill4]
-        filtered_skills = [skill for skill in skills if skill] #filtering out None or empty values
+        filtered_skills = [skill for skill in skills if skill and skill not in muted_skills] #filtering out None or empty values
         # Add the filtered skills to the all_skills list
+        
         all_skills.extend(filtered_skills)
     
     # Use Counter to count occurrences of each skill
