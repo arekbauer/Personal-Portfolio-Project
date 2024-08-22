@@ -121,9 +121,3 @@ b {
     }
 
 }
-
-@media(max-height: 700px) {
-   section {
-    height: 90vw;
-   }
-}
