@@ -72,6 +72,7 @@ a {
 }
 
 .project-card {
+    flex-wrap: wrap;
     transition: 0.3s;
     min-height: 300px;
     min-width: 250px;
@@ -136,4 +137,47 @@ a {
     padding: 4px 10px 4px 10px;
     position: relative;
     margin: 5px;
+}
+
+@media(max-width: 1229px) {
+    .projects-grid {
+        padding-left: 0;
+    }
+
+    .project-card {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media(max-width: 771px) {
+    .container-projects h1 {
+        font-size: 3.5rem;
+    }
+
+    .project-filter-buttons {
+        button {
+            font-size: 0.8rem;
+            padding: 10px 15px;
+        }
+    }
+
+    .container-projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+    .container-projects h1  {
+        font-size: 3rem;
+    }
+
+    .about-me p {
+        font-size: 1.1rem;
+    }
 }
