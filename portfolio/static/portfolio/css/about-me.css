@@ -106,6 +106,7 @@ b {
 
     .icons ul {
         justify-content: center;
+        padding-left: 2rem;
     }
 }
 
