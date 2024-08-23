@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-n0%9fd+t6w&f-fnkuqxx)#@*r&#(kf$-0s0g$%sr9#w0+-w3ez
 # Production Settings:
 DEBUG = False
 
-ALLOWED_HOSTS = ['arekbauer.eu.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.arekbauer.com']
 
 # # HTTPS settings 
 SESSION_COOKIE_SECURE = True 
