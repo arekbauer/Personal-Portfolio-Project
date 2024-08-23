@@ -30,14 +30,14 @@ DEBUG = False
 ALLOWED_HOSTS = ['arekbauer.eu.pythonanywhere.com']
 
 # # HTTPS settings 
-# SESSION_COOKIE_SECURE = True 
-# CSRF_COOKIE_SECURE = True 
-# SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True 
+CSRF_COOKIE_SECURE = True 
+SECURE_SSL_REDIRECT = True
 
 # # HSTS settings 
-# SECURE_HSTS_SECONDS = 60 # 60 secs
-# SECURE_HSTS_PRELOAD = True 
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_SECONDS = 60 # 60 secs
+SECURE_HSTS_PRELOAD = True 
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 
 # Application definition
@@ -140,4 +140,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-STATIC_URL = '/static/'
+
+try:
+    from .local_settings import *
+except ImportError:
+    print("No local_settings.py file. You must be on production")
