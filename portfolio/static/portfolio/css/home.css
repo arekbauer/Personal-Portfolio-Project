@@ -133,14 +133,14 @@ html {
 } /* TODO: Add JS code to fix scrolling issue on Chrome */
 
 section { 
-    height: 100vh;
+    height: 91vh;
     scroll-snap-align: start;
     scroll-margin-top: 78px;
 }
 
-section:last-of-type {
+/* section:last-of-type {
     height: 94vh;
-}
+} */
 
 #sidebar-active { 
     display: none;
