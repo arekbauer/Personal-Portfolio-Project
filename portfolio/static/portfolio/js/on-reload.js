@@ -12,7 +12,12 @@ const colours = {
     blueClear: '#233554'
 };
 
-window.onload = function(){
+// window.onload = function() {
+//     roughNotionFunction();
+//     projectsFunction();
+// };
+
+function roughNotionFunction() {
     // Define variables
     const textAnnotations = [];
 
@@ -42,4 +47,25 @@ window.onload = function(){
     // Show the annotation group with animation
     const ag = annotationGroup(allAnnotations);
     ag.show(); 
-};
+}
+
+function projectsFunction() {
+    const iso = new Isotope('.projects-grid');
+    const filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter-button'));
+
+    filterButtons.map(button => {
+        button.addEventListener('click', function() {
+        filterButtons.map(button => button.classList.remove('active-filter'));
+        const type = this.getAttribute('data-filter');
+        this.classList.add('active-filter');
+        iso.arrange({
+            // item element provided as argument
+            filter: type && `.${type}`
+        });
+        iso.layout();
+        });
+    });
+}
+
+window.addEventListener('load', roughNotionFunction);
+window.addEventListener('load', projectsFunction);
