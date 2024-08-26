@@ -45,8 +45,8 @@ b {
     font-size: 130%;
 }
 
-.fa-brands:hover, .fa-regular:hover{
-    color: var(--cream) !important;
+svg:hover path{
+    fill: var(--cream) !important;
 }
 
 /* Container to hold the two sections */

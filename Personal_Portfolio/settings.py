@@ -52,7 +52,6 @@ INSTALLED_APPS = [
     'livereload',
     'django.contrib.staticfiles',
     'portfolio',
-    'fontawesomefree',
 ]
 
 MIDDLEWARE = [

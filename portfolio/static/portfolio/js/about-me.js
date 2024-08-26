@@ -12,7 +12,7 @@ const colours = {
     blueClear: '#233554'
 };
 
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = function(){
     // Define variables
     const textAnnotations = [];
 
@@ -42,4 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show the annotation group with animation
     const ag = annotationGroup(allAnnotations);
     ag.show(); 
-});
+};
