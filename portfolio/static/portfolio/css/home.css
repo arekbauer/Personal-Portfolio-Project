@@ -136,6 +136,7 @@ section {
     height: 91vh;
     scroll-snap-align: start;
     scroll-margin-top: 78px;
+    margin-top: 5%;
 }
 
 /* section:last-of-type {
@@ -221,7 +222,7 @@ section {
     }
 
     section:nth-child(3) {
-        margin-top: 15%;
+        margin-top: 30%;
     }
 }
 
@@ -230,4 +231,3 @@ section {
         margin-top: 65%;
     }
 }
-
