@@ -10,6 +10,16 @@
     --default-font:'Roboto', sans-serif; /*300, 400, 700 */
 }
 
+.lightmode {
+    --darkest-blue: #ffffff;
+    --mid-blue: #ebeae6;
+    --light-blue: #24423b;
+    --lighter-blue: #333333;
+    --lightest-blue: #004d40;
+    --clear-blue:#000000;
+    --cream: #2F4F4F;
+}
+
 body {
     color: white;
     background-color: var(--darkest-blue);
@@ -35,7 +45,7 @@ html {
 
 a {
     text-decoration: none;
-    color: #64FFDA;
+    color: var(--cream);
 }
 
 .titles h1 {
@@ -47,12 +57,6 @@ a {
     font-family: var(--code-font);
     font-weight: 400;
     font-size: 4.5em; 
-}
-
-.right-text {
-    color: white;
-    font-family: var(--default-font);
-    font-weight: 400;
 }
 
 /* CSS for the navigation bar - nav, button and logo*/
@@ -116,8 +120,32 @@ a {
     border: solid 1px var(--darkest-blue);
 }
 
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.lightmode #theme-switch svg:first-child {
+    display: none;
+}
+
+.lightmode #theme-switch svg:last-child{
+    display: block;
+}
+
 .header h3 {
-    color: #64FFDA;
+    color: var(--cream);
     font-family:var(--code-font);
     font-weight: 600;
     text-decoration: none;
