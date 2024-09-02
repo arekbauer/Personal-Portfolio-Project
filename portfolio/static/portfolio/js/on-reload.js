@@ -11,7 +11,7 @@ const themeSwitch = document.getElementById('theme-switch')
 const enableLightmode = () => {
     document.body.classList.add('lightmode')
     localStorage.setItem('lightmode', 'active')
-    blueClear = '#4ed3c1';
+    blueClear = '#65d8c9';
     lighterBlue = '#000000';
 }
 
