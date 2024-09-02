@@ -6,18 +6,20 @@
     --lightest-blue: #E6F1FF;
     --clear-blue:#94A3B8;
     --cream: #64FFDA;
+    --hover: #64FFDA;
     --code-font: 'Inconsolata', monospace; /*400, 600 */
     --default-font:'Roboto', sans-serif; /*300, 400, 700 */
 }
 
 .lightmode {
-    --darkest-blue: #ffffff;
-    --mid-blue: #ebeae6;
-    --light-blue: #24423b;
-    --lighter-blue: #333333;
-    --lightest-blue: #004d40;
-    --clear-blue:#000000;
-    --cream: #2F4F4F;
+    --darkest-blue: #f5f3f0;
+    --mid-blue: #e1dbd1;
+    --light-blue: #aaaaaa;
+    --lighter-blue: black; /*titles */
+    --lightest-blue: #322f2a;
+    --clear-blue:#322f2a; /* text */
+    --cream: #112240;
+    --hover: #aaaaaa;
 }
 
 body {
@@ -91,7 +93,7 @@ a {
 } 
 
 .navbar a:hover {
-    color: var(--cream);
+    color: var(--hover);
 }
 
 .btn {
@@ -121,8 +123,6 @@ a {
 }
 
 #theme-switch {
-    height: 50px;
-    width: 50px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -130,6 +130,8 @@ a {
     cursor: pointer;
     margin-right: 30px;
     margin-left: 20px;
+    background: none;
+    border: none;
 }
 
 #theme-switch svg:last-child{

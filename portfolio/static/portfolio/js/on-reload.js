@@ -1,37 +1,41 @@
 import { annotate, annotationGroup  } from './rough-notation.esm.js';
 
-const colours = {
-    darkestBlue: '#0A192F',
-    midBlue: '#112240',
-    lightBlue: '#8892B0',
-    lighterBlue: '#CCD6F6',
-    lightestBlue: '#E6F1FF',
-    clearBlue: '#94A3B8',
-    cream: '#64FFDA',
-    bluey: '#ccd6f6',
-    blueClear: '#233554'
-};
+let blueClear = '#233554';
+let lighterBlue = '#CCD6F6';
+let annotationGroupInstance = null;
 
 let lightmode = localStorage.getItem('lightmode')
 const themeSwitch = document.getElementById('theme-switch')
 
+// Runs when lightmode is enabled
 const enableLightmode = () => {
     document.body.classList.add('lightmode')
     localStorage.setItem('lightmode', 'active')
+    blueClear = '#4ed3c1';
+    lighterBlue = '#000000';
 }
 
+// Runs when lightmode is disabled
 const disableLightmode = () => {
     document.body.classList.remove('lightmode')
     localStorage.setItem('lightmode', null)
+    blueClear = '#233554';
+    lighterBlue = '#CCD6F6';
 }
 
+// Checks memory if lightmode was active last
 if(lightmode === "active") enableLightmode()
 
+
+// When my lightmode/darkmode button is clicked...
 themeSwitch.addEventListener("click", () => {
     lightmode = localStorage.getItem('lightmode')
     lightmode !== "active" ? enableLightmode() : disableLightmode()
+    removeAnnotations();
+    roughNotionFunction();
 })
 
+// My Rough Notation handler
 function roughNotionFunction() {
     // Define variables
     const textAnnotations = [];
@@ -44,7 +48,7 @@ function roughNotionFunction() {
         
         const annotation = annotate(element, { 
             type: 'highlight', 
-            color: colours.blueClear,
+            color: blueClear,
             iterations: 1,
         });
         textAnnotations.push(annotation);
@@ -52,7 +56,7 @@ function roughNotionFunction() {
 
     const a1 = annotate(title, { 
         type: 'underline', 
-        color: colours.lighterBlue, 
+        color: lighterBlue, 
         padding: 0
     });
 
@@ -60,10 +64,19 @@ function roughNotionFunction() {
     const allAnnotations = [a1, ...textAnnotations ];
 
     // Show the annotation group with animation
-    const ag = annotationGroup(allAnnotations);
-    //ag.show(); 
+    annotationGroupInstance = annotationGroup(allAnnotations);
+    annotationGroupInstance.show(); 
 }
 
+// Checks if there are any current active annotations
+function removeAnnotations() {
+    if (annotationGroupInstance) {
+        annotationGroupInstance.hide();
+        annotationGroupInstance = null;
+    }
+}
+
+// Controls the filter buttons on my projects section
 function projectsFunction() {
     const iso = new Isotope('.projects-grid');
     const filterButtons = Array.prototype.slice.call(document.querySelectorAll('.filter-button'));
@@ -82,5 +95,7 @@ function projectsFunction() {
     });
 }
 
-window.addEventListener('load', roughNotionFunction);
-window.addEventListener('load', projectsFunction);
+window.addEventListener('load', () => {
+    roughNotionFunction();
+    projectsFunction();
+})
