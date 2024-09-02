@@ -45,8 +45,11 @@ b {
     font-size: 130%;
 }
 
+svg {
+    fill: var(--lighter-blue);
+}
 svg:hover path{
-    fill: var(--cream) !important;
+    fill: var(--hover) !important;
 }
 
 /* Container to hold the two sections */
