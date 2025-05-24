@@ -1,9 +1,9 @@
-.container-experience{
+.container-experience {
     margin: 0 auto;
     width: 70%;
-    margin-left:15%;
-    height: 90vh;    
-    border-width: 1px; 
+    margin-left: 15%;
+    height: auto;
+    border-width: 1px;
 }
 
 .container-experience header {
@@ -18,107 +18,119 @@
     font-size: 3.4rem;
 }
 
+/* Responsive CSS Grid */
 .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* narrower cards */
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Experience Card */
+.experience-card {
+    border: 2px solid var(--mid-blue);
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: default;
+    background-color: #00000020;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    overflow-x: hidden;
-    max-height: 80vh;
-}
-
-.experience-card {
-    border: 2px solid var(--mid-blue);  
-    transition: 0.3s;
-    min-width: 240px;
-    width: 70%;
-    border-radius: 5px;
-    width: 30%;
-    margin: 10px;
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-}
-
-.experience-extra {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.experience-card.expanded .experience-extra {
-    max-height: 500px;
+    transition: background-color 0.3s ease;
 }
 
 .experience-card:hover {
     background-color: var(--mid-blue);
 }
 
-.experience-card h2 {
+/* Header container with left and date right */
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+/* Left side with subtitle above title */
+.experience-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Subtitle */
+.experience-left h2 {
     color: var(--lightest-blue);
-    text-align: left;
     font-family: var(--default-font);
     font-weight: 700;
-    font-size: 1.5rem;
-    padding-top: 2%;
-    padding-left: 2%;
+    font-size: 1.3rem;
+    margin: 0 0 0.2rem 0;
 }
 
-.experience-card h3 {
+/* Title */
+.experience-left h3 {
     color: var(--light-blue);
-    text-align: left;
     font-family: var(--default-font);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
-    padding-left: 2%;
+    margin: 0;
 }
 
-.experience-card p {
+/* Date aligned vertically center on right */
+.experience-date {
     color: var(--cream);
-    text-align: right;
     font-family: var(--code-font);
     font-weight: 400;
-    padding-right: 2%;
-    margin-bottom: 2%;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+    flex-shrink: 0;
 }
 
-.experience-extra p {
+/* Description */
+.experience-description {
     color: var(--clear-blue);
     font-family: var(--default-font);
     font-weight: 300;
-    text-align: left;
     font-size: 0.9rem;
-    margin: 2%;
-    margin-top: 0;
+    line-height: 1.5;
+    margin: 0;
 }
 
-
-@media(max-width: 1229px) {
-    .experience-card {
-        min-width: 75%;
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .container-experience {
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
-@media(max-width: 771px) {
+@media (max-width: 600px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .experience-date {
+        margin-left: 0;
+        font-size: 0.8rem;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
     .container-experience h1 {
-        font-size: 3.5rem;
+        font-size: 2.6rem;
     }
 
-    .experience-grid h2 {
-        font-size: 1.3rem;
+    .experience-left h2 {
+        font-size: 1.1rem;
     }
 
-    .experience-card {
-        background-color: var(--mid-blue);
-        min-width: 95%;
-    }
-
-    .experience-grid h3 {
-        font-size: 1rem;
-    }
-
-    .experience-extra p {
+    .experience-left h3 {
         font-size: 0.9rem;
+    }
+
+    .experience-description {
+        font-size: 0.85rem;
     }
 }
