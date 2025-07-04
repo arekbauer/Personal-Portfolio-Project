@@ -162,6 +162,8 @@ a {
 
     .container-projects {
         height: auto;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .project-card {

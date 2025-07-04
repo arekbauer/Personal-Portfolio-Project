@@ -32,7 +32,6 @@
     border-radius: 5px;
     padding: 1rem;
     cursor: default;
-    background-color: #00000020;
     display: flex;
     flex-direction: column;
     transition: background-color 0.3s ease;
@@ -108,6 +107,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.3rem;
+        margin-bottom: 0;
     }
 
     .experience-date {
