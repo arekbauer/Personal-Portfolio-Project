@@ -21,6 +21,7 @@ from django.conf import settings
 from portfolio import views 
 
 urlpatterns = [
+    path('api/now-playing/', views.get_now_playing, name='now-playing'),
     path('secret-admin/', admin.site.urls),
     path('', views.home, name = 'home'),
 ]
