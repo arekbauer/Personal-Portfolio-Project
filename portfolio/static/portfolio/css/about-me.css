@@ -20,7 +20,7 @@
 }
 
 .profile-pic {
-    max-width: 95%;
+    max-width: 75%;
     border-radius: 5px;
 }
 
@@ -54,8 +54,6 @@ svg:hover path{
 
 /* Container to hold the two sections */
 .container {
-    border-width: 1px; 
-    border: 2px solid red;
     display: flex;
     width: 100%;
     height: auto;  
@@ -79,7 +77,10 @@ svg:hover path{
 .right {
     flex: 1;
     padding: 20px;
-    /* border: solid white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    /*border: solid white;
     border-width: 1px; */
     /* padding-top: 2%; */
 }
@@ -88,62 +89,117 @@ svg:hover path{
 #spotify-widget-container {
     margin: 2rem 0;
 }
+
 .spotify-widget {
     display: flex;
     align-items: center;
-    background-color: #282828;
+    background-color: var(--mid-blue);
     border-radius: 8px;
     padding: 16px;
-    max-width: 320px;
-    /* Let the widget take up available space on smaller screens */
+    max-width: 75%;
     width: 100%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-    color: #FFFFFF;
-    /* Animation properties */
+    box-shadow: 0 4px 20px rgba(10, 25, 47, 0.25); /* --darkest-blue with opacity */
+    color: var(--lighter-blue);
+    font-family: var(--default-font);
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    position: relative;
+    overflow: hidden;
 }
-/* This class is added by JS to trigger the animation */
+
 .spotify-widget.loaded {
     opacity: 1;
     transform: translateY(0);
 }
+
 .album-cover {
-    width: 64px; /* Slightly smaller to fit better */
+    width: 64px;
     height: 64px;
     border-radius: 6px;
     margin-right: 16px;
     flex-shrink: 0;
 }
+
 .song-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-width: 0;
 }
+
 .now-playing-label {
+    font-family: var(code-font);
     font-size: 0.7rem;
-    font-weight: 700;
-    color: #1DB954; /* Spotify Green */
+    font-weight: 400;
+    color: var(--cream);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 4px;
 }
+
 .song-title {
     font-size: 0.9rem;
     font-weight: 700;
+    color: var(--lighter-blue);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .artist-name {
     font-size: 0.8rem;
     font-weight: 500;
-    color: #B3B3B3;
+    color: var(--clear-blue);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.spotify-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Starts fully transparent */
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  z-index: 1; 
+}
+
+/*On hover, darken the overlay*/
+a:hover .spotify-widget::before {
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+}
+
+.spotify-widget::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-color: var(--hover);
+  mask-image: url('/static/portfolio/spotify-logo.svg');
+  mask-size: 50px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Reveal the logo on hover */
+a:hover .spotify-widget::after {
+  opacity: 1;
+  transform: scale(1);
 }
 
 @media(max-width: 770px) {

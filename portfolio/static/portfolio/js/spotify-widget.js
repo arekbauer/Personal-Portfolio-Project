@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return ''; // Don't show anything if there's no data
         }
 
-        const label = data.isPlaying ? 'Now Listening To' : 'Last Listened To';
+        const label = data.isPlaying ? 'Now Playing' : 'Last Played';
 
         return `
             <a href="${data.songUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
