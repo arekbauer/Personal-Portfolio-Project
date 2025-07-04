@@ -202,6 +202,17 @@ a:hover .spotify-widget::after {
   transform: scale(1);
 }
 
+@media (min-width: 771px) and (max-width: 990px) {
+  .spotify-widget {
+    flex-direction: column;
+  }
+
+  .album-cover {
+    margin-bottom: 16px;
+  }
+}
+
+
 @media(max-width: 770px) {
     .container {
         flex-direction: column;
@@ -214,6 +225,7 @@ a:hover .spotify-widget::after {
 
     .right {
         text-align: center;
+        align-items: center;
     }
 
     .profile-pic {
@@ -231,6 +243,10 @@ a:hover .spotify-widget::after {
     .icons ul {
         justify-content: center;
         padding-left: 2rem;
+    }
+
+    .spotify-widget {
+        max-width: 100%;
     }
 }
 
