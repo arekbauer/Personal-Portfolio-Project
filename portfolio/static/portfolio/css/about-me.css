@@ -77,9 +77,8 @@ svg:hover path{
 .right {
     flex: 1;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     margin-top: 5%;
+    min-width: 0;
     /*border: solid white;
     border-width: 1px; */
     /* padding-top: 2%; */
@@ -205,10 +204,12 @@ a:hover .spotify-widget::after {
 @media (min-width: 771px) and (max-width: 990px) {
   .spotify-widget {
     flex-direction: column;
+    text-align: center;
   }
 
   .album-cover {
     margin-bottom: 16px;
+    margin-right: 0;
   }
 }
 
@@ -246,7 +247,9 @@ a:hover .spotify-widget::after {
     }
 
     .spotify-widget {
-        max-width: 100%;
+        max-width: 50%;
+        align-items: center;
+        margin: 0 auto;
     }
 }
 

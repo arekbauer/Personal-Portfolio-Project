@@ -67,6 +67,7 @@ function roughNotionFunction() {
     annotationGroupInstance = annotationGroup(allAnnotations);
     annotationGroupInstance.show(); 
 }
+window.roughNotionFunction = roughNotionFunction;
 
 // Checks if there are any current active annotations
 function removeAnnotations() {
@@ -96,6 +97,5 @@ function projectsFunction() {
 }
 
 window.addEventListener('load', () => {
-    roughNotionFunction();
     projectsFunction();
 })

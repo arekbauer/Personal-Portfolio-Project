@@ -40,7 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const widget = widgetContainer.querySelector('.spotify-widget');
             if (widget) {
-                setTimeout(() => widget.classList.add('loaded'), 10);
+                setTimeout(() => {
+                    widget.classList.add('loaded');
+                    if (typeof window.roughNotionFunction === 'function') {
+                        window.roughNotionFunction();
+                    }
+                }, 10);
             }
         } catch (error) {
             console.error("Could not fetch Spotify data:", error);
