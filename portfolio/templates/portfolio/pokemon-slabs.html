@@ -1,0 +1,67 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Slabs | Arkadiusz Bauer{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'portfolio/css/pokemon-binder.css' %}">
+{% endblock %}
+
+{% block content %}
+<main class="binder-page">
+  <section class="binder-hero container">
+    <p class="section-label">My collection</p>
+    <h1 class="container-header">Slabs</h1>
+    <p class="binder-intro">A small shelf of graded cards I like owning and looking at.</p>
+  </section>
+
+  <section class="binder-section slab-section">
+    <div class="container binder-container">
+      {% if slabs %}
+      <div class="slab-grid">
+        {% for slab in slabs %}
+        <article class="slab-card">
+          <figure class="slab-image-frame">
+            {% if slab.slab_photo %}
+            <img src="{{ slab.slab_photo.url }}" alt="{{ slab.card.display_name }} graded slab">
+            {% elif slab.card.image_large %}
+            <img src="{{ slab.card.image_large }}" alt="{{ slab.card.display_name }}">
+            {% else %}
+            <div class="card-placeholder">Card art pending</div>
+            {% endif %}
+          </figure>
+          <div class="slab-content">
+            <h3>{{ slab.card.display_name|default:slab.card_id }}</h3>
+            <p>{{ slab.card.set_name }}{% if slab.card.card_number %} #{{ slab.card.card_number }}{% endif %}</p>
+            <dl class="slab-meta">
+              <div>
+                <dt>Grade</dt>
+                <dd>{{ slab.grader }} {{ slab.grade }}</dd>
+              </div>
+              {% if slab.card.rarity %}
+              <div>
+                <dt>Rarity</dt>
+                <dd>{{ slab.card.rarity }}</dd>
+              </div>
+              {% endif %}
+              {% if slab.certification_number %}
+              <div>
+                <dt>Cert</dt>
+                <dd>{{ slab.certification_number }}</dd>
+              </div>
+              {% endif %}
+            </dl>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="binder-empty">
+        <h3>No slabs added yet</h3>
+        <p>Add graded cards in secret-admin to start the showcase.</p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% endblock %}

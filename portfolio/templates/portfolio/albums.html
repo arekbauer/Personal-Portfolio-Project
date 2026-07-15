@@ -1,0 +1,52 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block title %}Albums | Arkadiusz Bauer{% endblock %}
+
+{% block content %}
+<main class="albums-page">
+  <section class="albums-hero container">
+    <p class="section-label">Favourite listens</p>
+    <h1 class="container-header">Albums</h1>
+    <p class="albums-intro">A small shelf of albums I consider perfect (or close to).</p>
+    <a
+      href="https://open.spotify.com/user/n42hzpyv9obvzoyl6isvsckx0?si=8d5f4e69d3ea4428"
+      class="spotify-profile-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Follow me on Spotify
+    </a>
+  </section>
+
+  <section class="albums-section">
+    <div class="container albums-container">
+      {% if album_picks %}
+      <div class="album-gallery-grid">
+        {% for album in album_picks %}
+        <article class="album-gallery-card">
+          <a href="{{ album.spotify_url|default:'#' }}" {% if album.spotify_url %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {% if album.cover_image_url %}
+            <img src="{{ album.cover_image_url }}" alt="{{ album.title }} album cover">
+            {% else %}
+            <div class="personal-card-placeholder">Album art pending</div>
+            {% endif %}
+            <div>
+              <h2>{{ album.title|default:"Album details pending" }}</h2>
+              {% if album.artist %}<p>{{ album.artist }}</p>{% endif %}
+              {% if album.release_date %}<span>{{ album.release_date|date:"Y" }}</span>{% endif %}
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="personal-empty albums-empty">
+        <h2>No albums added yet</h2>
+        <p>Add Spotify album IDs in secret-admin to start the shelf.</p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+</main>
+{% endblock %}
