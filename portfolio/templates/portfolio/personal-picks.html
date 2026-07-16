@@ -1,0 +1,23 @@
+<div class="container personal-picks-container">
+  <div class="quiet-picks">
+    <div class="quiet-picks-copy">
+      <p class="section-label">Elsewhere</p>
+      <h2>A few side shelves</h2>
+    </div>
+
+    <nav class="quiet-picks-links" aria-label="Personal pages">
+      <a href="{% url 'recipes:list' %}">
+        <span>Cooking</span>
+        <small>Recipes</small>
+      </a>
+      <a href="{% url 'albums' %}">
+        <span>Albums</span>
+        <small>Favourite listens</small>
+      </a>
+      <a href="{% url 'pokemon-collection' %}">
+        <span>Slabs</span>
+        <small>Collection</small>
+      </a>
+    </nav>
+  </div>
+</div>

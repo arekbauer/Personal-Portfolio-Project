@@ -26,6 +26,8 @@ urlpatterns = [
     path('api/now-playing/', views.get_now_playing, name='now-playing'),
     path('secret-admin/', admin.site.urls),
     path('recipes/', include('recipes.urls')),
+    path('albums/', views.albums, name='albums'),
+    path('slabs/', views.pokemon_slabs, name='pokemon-collection'),
     path('', views.home, name = 'home'),
     
     # Include TRMNL service URLs
