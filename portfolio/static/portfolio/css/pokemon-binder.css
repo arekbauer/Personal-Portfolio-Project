@@ -11,10 +11,11 @@
 }
 
 .binder-intro {
-    max-width: 640px;
+    max-width: 34rem;
     margin: 1.75rem 0 0;
     color: var(--secondary-color);
     font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.55;
 }
 
 .section-label {
@@ -40,6 +41,7 @@
 }
 
 .slab-grid {
+    align-items: start;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: clamp(1.5rem, 3vw, 2.5rem);
@@ -158,12 +160,18 @@
 
 @media (max-width: 900px) {
     .binder-hero {
-        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 3rem 0 4rem;
+        text-align: center;
     }
 
-    .binder-hero {
-        align-items: start;
-        padding: 3rem 0 4rem;
+    .binder-hero .container-header {
+        text-align: center;
+    }
+
+    .binder-intro {
+        max-width: 22rem;
+        margin-inline: auto;
     }
 }
 
@@ -174,6 +182,96 @@
 
     .binder-section {
         border-radius: var(--shape-large);
-        padding: 3.5rem 0;
+        padding: 3rem 0;
+    }
+
+    .slab-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.25rem;
+    }
+
+    .slab-card:hover,
+    .slab-card:focus-within {
+        transform: none;
+    }
+
+    .slab-image-frame {
+        aspect-ratio: 0.72;
+        background: transparent;
+        border: 0;
+        max-width: 220px;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .slab-image-frame img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .slab-content {
+        margin: 0 auto;
+        max-width: 220px;
+        text-align: center;
+    }
+
+    .slab-card {
+        gap: 0.85rem;
+    }
+
+    .slab-content h3 {
+        font-size: 1rem;
+    }
+
+    .slab-content p {
+        font-size: 0.85rem;
+    }
+
+    .slab-meta {
+        justify-content: center;
+    }
+
+    .slab-meta div {
+        min-width: auto;
+    }
+
+    .slab-meta dd {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 430px) {
+    .slab-grid {
+        gap: 1.5rem 0.9rem;
+    }
+
+    .slab-image-frame,
+    .slab-content {
+        max-width: 170px;
+    }
+
+    .slab-content h3 {
+        font-size: 0.92rem;
+    }
+
+    .slab-content p {
+        font-size: 0.78rem;
+    }
+
+    .slab-meta {
+        gap: 0.45rem 0.55rem;
+        margin-top: 0.55rem;
+        padding-top: 0.55rem;
+    }
+
+    .slab-meta dt {
+        font-size: 0.62rem;
+    }
+
+    .slab-meta dd {
+        font-size: 0.74rem;
+        line-height: 1.2;
     }
 }

@@ -692,6 +692,24 @@ section {
 
 @media (max-width: 560px) {
     .album-gallery-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.4rem 0.85rem;
+    }
+
+    .album-gallery-card a {
+        gap: 0.65rem;
+    }
+
+    .album-gallery-card h2 {
+        font-size: 0.92rem;
+    }
+
+    .album-gallery-card p {
+        font-size: 0.78rem;
+    }
+
+    .album-gallery-card span {
+        font-size: 0.68rem;
+        margin-top: 0.25rem;
     }
 }
