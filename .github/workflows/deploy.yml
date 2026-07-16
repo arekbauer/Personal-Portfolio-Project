@@ -77,12 +77,40 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PA_SSH_PRIVATE_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+
       - name: Deploy via SSH
-        uses: MiguelRizzi/pythonanywhere-deploy-ssh@v1.0.0
-        with:
-          ssh_host: ${{ secrets.PA_HOST }}
-          username: ${{ secrets.PA_USERNAME }}
-          ssh_private_key: ${{ secrets.PA_SSH_PRIVATE_KEY }}
-          working_directory: ${{ secrets.PA_WORKING_DIRECTORY }}
-          venv_directory: ${{ secrets.PA_VENV_DIRECTORY }}
-          wsgi_file: ${{ secrets.PA_WSGI_PATH }}
+        env:
+          SSH_HOST: ${{ secrets.PA_HOST }}
+          SSH_USERNAME: ${{ secrets.PA_USERNAME }}
+          WORKING_DIRECTORY: ${{ secrets.PA_WORKING_DIRECTORY }}
+          VENV_DIRECTORY: ${{ secrets.PA_VENV_DIRECTORY }}
+          WSGI_FILE: ${{ secrets.PA_WSGI_PATH }}
+        run: |
+          ssh \
+            -o BatchMode=yes \
+            -o StrictHostKeyChecking=accept-new \
+            "$SSH_USERNAME@$SSH_HOST" \
+            bash -s -- "$WORKING_DIRECTORY" "$VENV_DIRECTORY" "$WSGI_FILE" <<'DEPLOY'
+          set -euo pipefail
+
+          working_directory="$1"
+          venv_directory="$2"
+          wsgi_file="$3"
+
+          cd "$working_directory"
+          git fetch origin main
+          git merge --ff-only origin/main
+
+          source "$venv_directory/bin/activate"
+          python -m pip install -r requirements.txt
+          python manage.py migrate --noinput
+          python manage.py collectstatic --noinput
+          touch "$wsgi_file"
+          DEPLOY
