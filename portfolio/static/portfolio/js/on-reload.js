@@ -133,6 +133,9 @@ function roughNotionFunction() {
 // Expose to window so your API calls can trigger it
 window.roughNotionFunction = roughNotionFunction;
 
+// Render the intro annotations as soon as the module and page markup are ready.
+roughNotionFunction();
+
 // Checks if there are any current active annotations
 function removeAnnotations() {
     if (annotationGroupInstance) {

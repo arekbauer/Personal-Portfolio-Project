@@ -1,19 +1,15 @@
 /* About Me Section */
 
-.valo-cursor {
-    cursor: url('/static/portfolio/valo-cursor.png'), auto;
-}
-
-.python-cursor {
-    cursor: url('/static/portfolio/python-cursor.png'), auto;
-}
-
 .kotlin-cursor {
     cursor: url('/static/portfolio/kotlin-cursor.png'), auto;
 }
 
-.js-cursor {
-    cursor: url('/static/portfolio/js-cursor.png'), auto;
+.jetpack-cursor {
+    cursor: url('/static/portfolio/jetpack-compose.png'), auto;
+}
+
+.stardew-cursor {
+    cursor: url('/static/portfolio/stardew.png'), auto;
 }
 
 .about-container {
