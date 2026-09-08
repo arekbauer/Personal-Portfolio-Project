@@ -431,6 +431,7 @@ section {
     min-height: 100vh;
     padding-top: 9rem;
     background: var(--bg-color);
+    justify-content: center;
 }
 
 #projects {
