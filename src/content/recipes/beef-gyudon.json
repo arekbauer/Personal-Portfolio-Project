@@ -1,0 +1,89 @@
+{
+  "title": "Rice Cooker Beef Gyudon",
+  "slug": "beef-gyudon",
+  "image": "recipes/images/rice-cooker-beef-gyudon.webp",
+  "baseServings": 4,
+  "imageCredit": "",
+  "imageCreditUrl": "",
+  "sourceName": "",
+  "sourceUrl": "",
+  "categories": [
+    "Dinner",
+    "Japanese",
+    "Rice Cooker",
+    "Quick"
+  ],
+  "ingredients": [
+    {
+      "amount": 3,
+      "unit": "cups",
+      "name": "rice",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 350,
+      "unit": "g",
+      "name": "frozen hot pot beef slices",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 2,
+      "unit": "medium",
+      "name": "white onions",
+      "note": "sliced",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 3,
+      "unit": "",
+      "name": "spring onions",
+      "note": "sliced, for garnish",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 75,
+      "unit": "ml",
+      "name": "light soy sauce",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 3,
+      "unit": "tbsp",
+      "name": "white or brown sugar",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "white or apple cider vinegar",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 1,
+      "unit": "clove",
+      "name": "garlic",
+      "note": "minced, optional",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 2.75,
+      "unit": "cups",
+      "name": "beef stock",
+      "note": "made with 1 stock cube or pot",
+      "section": "Ingredients"
+    }
+  ],
+  "steps": [
+    "The liquid base (2 minutes): Mix the soy sauce, sugar, vinegar and minced garlic into the warm beef stock. Whisk until the sugar has completely dissolved.",
+    "Layer the rice and sauce (2 minutes): Tip the washed and drained rice into the rice cooker pot. Pour the sauce mixture directly over the rice and stir gently so the rice sits flat.",
+    "The onion buffer (2 minutes): Scatter the sliced white onion wedges evenly over the rice. Do not stir them in; they form a bed for the beef and soften into sweet, translucent ribbons.",
+    "Layer the frozen beef (2 minutes): Arrange the frozen hot pot beef slices evenly over the onions. Break apart any clumps as much as possible to create a flat layer.",
+    "Cook and rest: Close the lid and run the regular White Rice cycle. When it switches to Keep Warm, leave the lid closed for another 10 minutes so the steam finishes cooking the beef and rendering its fat into the rice.",
+    "The gyudon fold (2 minutes): Open the lid and scatter over the spring onions. Use a rice paddle to pull from the bottom upwards, gently breaking up the beef as you fold the onions and savory sauce through the rice."
+  ]
+}

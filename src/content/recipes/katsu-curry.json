@@ -1,0 +1,90 @@
+{
+  "title": "Katsu Curry",
+  "slug": "katsu-curry",
+  "image": "recipes/images/katsu-curry.webp",
+  "baseServings": 4,
+  "imageCredit": "AI-generated image",
+  "imageCreditUrl": "",
+  "sourceName": "RecipeTin Japan",
+  "sourceUrl": "https://japan.recipetineats.com/katsu-curry-japanese-curry-rice-with-chicken-cutlet/",
+  "categories": [
+    "Dinner",
+    "Japanese"
+  ],
+  "ingredients": [
+    {
+      "amount": 2,
+      "unit": "medium",
+      "name": "onions",
+      "note": "sliced into 1cm wide pieces",
+      "section": "Curry"
+    },
+    {
+      "amount": 1,
+      "unit": "large",
+      "name": "potato",
+      "note": "cut into 1.5cm cubes",
+      "section": "Curry"
+    },
+    {
+      "amount": 1,
+      "unit": "medium",
+      "name": "carrot",
+      "note": "sliced to 7mm thick pieces",
+      "section": "Curry"
+    },
+    {
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "oil",
+      "note": "",
+      "section": "Curry"
+    },
+    {
+      "amount": 115,
+      "unit": "g",
+      "name": "House Vermont Curry roux",
+      "note": "half a 230g packet, mild or preferred heat level",
+      "section": "Curry"
+    },
+    {
+      "amount": 800,
+      "unit": "ml",
+      "name": "water",
+      "note": "",
+      "section": "Curry"
+    },
+    {
+      "amount": 4,
+      "unit": "cups",
+      "name": "cooked rice",
+      "note": "hot",
+      "section": "Curry"
+    },
+    {
+      "amount": 4,
+      "unit": "",
+      "name": "chicken cutlets",
+      "note": "cut into 2.5cm wide strips",
+      "section": "Curry"
+    },
+    {
+      "amount": 4,
+      "unit": "tbsp",
+      "name": "fukujinzuke",
+      "note": "optional",
+      "section": "Condiment"
+    }
+  ],
+  "steps": [
+    "Add oil to a pot and heat over medium-high heat.",
+    "Add the onion and saute for a few minutes, or until the onion becomes translucent and the edges start getting slightly browned.",
+    "Add the potatoes and carrots into the pot and stir for a couple of minutes, or until the surface of the vegetables starts getting cooked.",
+    "Add water and turn the heat up to bring it to a boil. Reduce the heat to medium-low and simmer for about 7 minutes, or until the vegetables are nearly cooked through.",
+    "Break the curry roux cake into small blocks along the lines and add them into the pot. Stir gently to blend the curry roux.",
+    "Reduce the heat to low, place a lid on, and cook for about 10 minutes or until the curry roux is completely dissolved. Stir occasionally, as the curry tends to stick to the bottom of the pot.",
+    "Check the consistency of the sauce. It should be like bechamel sauce. If it is too thick, adjust with some water. If it is too thin, cook further without the lid. It will thicken as it cools.",
+    "Turn the heat off.",
+    "To serve, place hot cooked rice onto one side of a plate. Place the chicken cutlet pieces next to the rice, then pour curry beside the cutlet. Add fukujinzuke on the side if using and serve immediately."
+  ]
+}

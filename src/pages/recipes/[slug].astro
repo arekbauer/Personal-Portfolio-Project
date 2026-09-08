@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { groupIngredients, mediaUrl, recipes, type Recipe } from "../../lib/content";
+
+export function getStaticPaths() {
+  return recipes.map((recipe) => ({ params: { slug: recipe.slug }, props: { recipe } }));
+}
+
+interface Props { recipe: Recipe }
+const { recipe } = Astro.props;
+const sections = groupIngredients(recipe.ingredients);
+---
+
+<BaseLayout title={`${recipe.title} | Recipes`} description={`${recipe.title} recipe by Arek Bauer.`} extraStylesheet="/static/recipes/css/recipes.css">
+  <main class="recipe-detail-page">
+    <div class="container recipe-detail-container">
+      <a href="/recipes/" class="back-to-recipes">← All recipes</a>
+      <header class="recipe-detail-hero">
+        <div class="recipe-detail-copy">
+          <div class="recipe-card-meta">{recipe.categories.map((category) => <a href={`/recipes/?category=${encodeURIComponent(category)}`}>{category}</a>)}</div>
+          <h1>{recipe.title}</h1>
+          <p>Adjust the servings below and the ingredient quantities will update automatically.</p>
+          {recipe.sourceUrl && <a class="recipe-source-link" href={recipe.sourceUrl} target="_blank" rel="noopener noreferrer">{recipe.sourceName || "Original recipe"} <span aria-hidden="true">↗</span></a>}
+        </div>
+        <figure class="recipe-detail-visual">
+          <img src={mediaUrl(recipe.image)} alt={recipe.title} class="recipe-detail-image" />
+          {recipe.imageCredit && <figcaption>Photo: {recipe.imageCreditUrl ? <a href={recipe.imageCreditUrl} target="_blank" rel="noopener noreferrer">{recipe.imageCredit}</a> : recipe.imageCredit}</figcaption>}
+        </figure>
+      </header>
+      <div class="recipe-content-grid">
+        <aside class="ingredients-panel">
+          <div class="ingredients-heading">
+            <div><p class="section-label">Prepare</p><h2>Ingredients</h2></div>
+            <div class="servings-control" data-base-servings={recipe.baseServings}>
+              <span id="servings-label">Servings</span>
+              <div class="servings-input-group">
+                <button type="button" data-serving-action="decrease" aria-label="Decrease servings">−</button>
+                <input id="servings" type="number" min="1" max="99" value={recipe.baseServings} inputmode="numeric" aria-labelledby="servings-label" />
+                <button type="button" data-serving-action="increase" aria-label="Increase servings">+</button>
+              </div>
+            </div>
+          </div>
+          {sections.map((section) => (
+            <>
+              {section.name && <h3 class="ingredient-section-title">{section.name}</h3>}
+              <ul class="ingredient-list">{section.items.map((ingredient) => (
+                <li>
+                  {ingredient.amount !== null && <span class="ingredient-amount" data-base-amount={ingredient.amount}>{ingredient.amount}</span>}
+                  {ingredient.unit && <> <span class="ingredient-unit">{ingredient.unit}</span></>}
+                  <> <span class="ingredient-name">{ingredient.name}</span></>
+                  {ingredient.note && <span class="ingredient-note">, {ingredient.note}</span>}
+                </li>
+              ))}</ul>
+            </>
+          ))}
+        </aside>
+        <section class="method-panel">
+          <p class="section-label">Make it</p><h2>Method</h2>
+          <ol class="recipe-steps">{recipe.steps.map((step, index) => <li><span class="step-number" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><p>{step}</p></li>)}</ol>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script is:inline src="/static/recipes/js/servings.js"></script>
+</BaseLayout>

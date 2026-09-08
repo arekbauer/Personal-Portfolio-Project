@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { mediaUrl, projects, site } from "../lib/content";
+---
+
+<BaseLayout>
+  <main class="section-container">
+    <section id="about">
+      <div class="container about-container">
+        <div class="left">
+          <p class="hero-label">Software engineer · Manchester</p>
+          <h3><span class="highlight">Hello!</span> I'm Arek</h3>
+          <div class="about-me">
+            {site.intros.map((intro) => <p set:html={intro.description} />)}
+          </div>
+          <nav class="social-links" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/arkadiusz-bauer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/arekbauer" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:arek.bauer12@gmail.com">Email</a>
+          </nav>
+        </div>
+        <div class="right">
+          {site.intros.map((intro) => (
+            <picture>
+              <source srcset={mediaUrl(intro.image_small)} media="(max-width: 968px)" />
+              <source srcset={mediaUrl(intro.image)} media="(min-width: 969px)" />
+              <img src={mediaUrl(intro.image)} alt="Arek Bauer" class="profile-pic" />
+            </picture>
+          ))}
+          <div id="spotify-widget-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container projects-container d-flex flex-column">
+        <header class="mb-5">
+          <p class="section-label">Projects & experiments</p>
+          <h1 class="container-header">Things I've Made</h1>
+        </header>
+        <div class="row g-4">
+          {projects.map((project) => (
+            <div class="col-12 col-md-6 col-lg-4 project-card-wrapper">
+              <article class="project-card">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" class="project-image-link">
+                  <img src={mediaUrl(project.image)} alt={project.title} />
+                </a>
+                <h2 class="project-title">{project.title}</h2>
+                <p class="project-description" set:html={project.description} />
+                <div class="project-tech">{project.skills.map((skill) => <span class="tech-tag">{skill}</span>)}</div>
+                <div class="project-links"><a href={project.url} target="_blank" rel="noopener noreferrer" class="project-link" aria-label={`Visit ${project.title}`}>↗</a></div>
+              </article>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="personal-picks">
+      <div class="container personal-picks-container">
+        <div class="quiet-picks">
+          <div class="quiet-picks-copy"><p class="section-label">Elsewhere</p><h2>A few side shelves</h2></div>
+          <nav class="quiet-picks-links" aria-label="Personal pages">
+            <a href="/recipes/"><span>Cooking</span><small>Recipes</small></a>
+            <a href="/albums/"><span>Albums</span><small>Favourite listens</small></a>
+            <a href="/slabs/"><span>Slabs</span><small>Collection</small></a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .social-links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+  .social-links a { background: var(--accent-container); border-radius: 999px; color: var(--accent-on-container); font-weight: 700; padding: .55rem .9rem; }
+</style>

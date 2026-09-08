@@ -1,0 +1,116 @@
+{
+  "title": "Tomato Beef Pasta",
+  "slug": "tomato-beef-pasta",
+  "image": "recipes/images/creamy-pasta.webp",
+  "baseServings": 4,
+  "imageCredit": "recipetineats",
+  "imageCreditUrl": "https://www.recipetineats.com/one-pot-creamy-tomato-beef-pasta/",
+  "sourceName": "recipetineats",
+  "sourceUrl": "https://www.recipetineats.com/one-pot-creamy-tomato-beef-pasta/",
+  "categories": [
+    "Dinner",
+    "Pasta"
+  ],
+  "ingredients": [
+    {
+      "amount": 1.5,
+      "unit": "tbsp",
+      "name": "olive oil",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 1,
+      "unit": "medium",
+      "name": "onion",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 2,
+      "unit": "cloves",
+      "name": "garlic",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 500,
+      "unit": "g",
+      "name": "beef",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "tomato purée",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 2,
+      "unit": "tsp",
+      "name": "mixed herbs",
+      "note": "",
+      "section": "Base"
+    },
+    {
+      "amount": 400,
+      "unit": "g",
+      "name": "chopped tomatoes",
+      "note": "",
+      "section": "Sauce"
+    },
+    {
+      "amount": 1,
+      "unit": "litre",
+      "name": "chicken stock",
+      "note": "",
+      "section": "Sauce"
+    },
+    {
+      "amount": 350,
+      "unit": "g",
+      "name": "pasta",
+      "note": "(fusilli, penne, or macaroni)",
+      "section": "Sauce"
+    },
+    {
+      "amount": 1.5,
+      "unit": "tsp",
+      "name": "salt",
+      "note": "",
+      "section": "Sauce"
+    },
+    {
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "black pepper",
+      "note": "",
+      "section": "Sauce"
+    },
+    {
+      "amount": 0.5,
+      "unit": "tsp",
+      "name": "chilli flakes",
+      "note": "",
+      "section": "Sauce"
+    },
+    {
+      "amount": 180,
+      "unit": "ml",
+      "name": "double cream",
+      "note": "",
+      "section": "Sauce"
+    }
+  ],
+  "steps": [
+    "Sauté the aromatics: Heat the olive oil in a large, heavy-based pot or deep saucepan over medium-high heat. Add the chopped onion and minced garlic, sautéing for 1 ½ minutes until fragrant.",
+    "Brown the beef: Add the beef mince. Cook for 4–5 minutes, breaking it apart with a wooden spoon as it browns, until no pink meat remains.",
+    "Cook the spices & purée: Stir in the Italian herbs and cook for 30 seconds. Add the tomato purée and stir-fry for 1 minute to cook out the raw metallic edge and deepen the flavour.",
+    "Add sauce & pasta: Pour in the tinned tomatoes, chicken stock, salt, black pepper, and chilli flakes (if using). Stir well, then add the dry pasta, pressing it down so it is fully submerged in the liquid.",
+    "Simmer (15 minutes): Bring the liquid to a gentle boil, then reduce the heat to medium-low. Simmer uncovered for 15 minutes, stirring every few minutes (and more frequently towards the end so the pasta doesn't catch on the bottom of the pot) until the pasta is al dente.",
+    "Finish with cream: Pour in the double cream and simmer gently for another 1 to 2 minutes. It will look quite saucy at first, but the pasta will quickly absorb the liquid into a thick, glossy sauce.",
+    "Serve: Take the pot off the heat, give it a final stir, and ladle into warm bowls. Top generously with freshly grated Parmesan and chopped parsley."
+  ]
+}

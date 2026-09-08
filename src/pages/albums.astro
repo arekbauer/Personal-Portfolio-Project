@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { albums } from "../lib/content";
+---
+
+<BaseLayout title="Albums | Arkadiusz Bauer">
+  <main class="albums-page">
+    <section class="albums-hero container">
+      <p class="section-label">Favourite listens</p>
+      <h1 class="container-header">Albums</h1>
+      <p class="albums-intro">A small shelf of albums I consider perfect (or close to).</p>
+      <a href="https://open.spotify.com/user/n42hzpyv9obvzoyl6isvsckx0?si=8d5f4e69d3ea4428" class="spotify-profile-link" target="_blank" rel="noopener noreferrer">Follow me on Spotify</a>
+    </section>
+    <section class="albums-section">
+      <div class="container albums-container">
+        <div class="album-gallery-grid">
+          {albums.map((album) => (
+            <article class="album-gallery-card">
+              <a href={album.spotifyUrl} target="_blank" rel="noopener noreferrer">
+                <img src={album.coverImageUrl} alt={`${album.title} album cover`} loading="lazy" />
+                <div><h2>{album.title}</h2><p>{album.artist}</p>{album.releaseDate && <span>{album.releaseDate.slice(0, 4)}</span>}</div>
+              </a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

@@ -1,0 +1,108 @@
+{
+  "title": "Marry Me Chicken Orzo",
+  "slug": "marry-me-chicken-orzo",
+  "image": "recipes/images/marry-me-chicken-orzo.webp",
+  "baseServings": 4,
+  "imageCredit": "AI-generated image",
+  "imageCreditUrl": "",
+  "sourceName": "Taming Twins",
+  "sourceUrl": "https://www.tamingtwins.com/marry-me-chicken-orzo/",
+  "categories": [
+    "Dinner",
+    "Pasta",
+    "Quick"
+  ],
+  "ingredients": [
+    {
+      "amount": 650,
+      "unit": "g",
+      "name": "chicken breast",
+      "note": "skinless and boneless, chopped",
+      "section": ""
+    },
+    {
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "olive oil",
+      "note": "or oil from the sun-dried tomatoes jar",
+      "section": ""
+    },
+    {
+      "amount": 3,
+      "unit": "",
+      "name": "garlic cloves",
+      "note": "peeled and crushed",
+      "section": ""
+    },
+    {
+      "amount": 170,
+      "unit": "g",
+      "name": "sun-dried tomatoes in oil",
+      "note": "drained",
+      "section": ""
+    },
+    {
+      "amount": 1,
+      "unit": "tsp",
+      "name": "oregano",
+      "note": "",
+      "section": ""
+    },
+    {
+      "amount": 2,
+      "unit": "tsp",
+      "name": "paprika",
+      "note": "",
+      "section": ""
+    },
+    {
+      "amount": 250,
+      "unit": "g",
+      "name": "orzo",
+      "note": "",
+      "section": ""
+    },
+    {
+      "amount": 650,
+      "unit": "ml",
+      "name": "hot chicken stock",
+      "note": "made with a stock cube",
+      "section": ""
+    },
+    {
+      "amount": 150,
+      "unit": "ml",
+      "name": "double cream",
+      "note": "heavy cream or thickened cream also works",
+      "section": ""
+    },
+    {
+      "amount": 50,
+      "unit": "g",
+      "name": "parmesan",
+      "note": "grated",
+      "section": ""
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "name": "spinach",
+      "note": "",
+      "section": ""
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "freshly ground black pepper",
+      "note": "",
+      "section": ""
+    }
+  ],
+  "steps": [
+    "In a large, deep frying pan, heat the oil over a medium heat. When it is hot, carefully add the chicken pieces. Cook for 5 minutes, stirring occasionally, until all sides are starting to colour.",
+    "Reduce the heat and add the garlic, sun-dried tomatoes, oregano and paprika. Stir for 3-5 minutes until the garlic is softened.",
+    "Add the orzo, stock and some pepper. Stir well, then put the lid on. Cook for 10 minutes, stirring occasionally, until the orzo is almost cooked.",
+    "Turn the heat to the lowest setting. Add the spinach and cream, then stir very well for 1-3 minutes until the spinach is wilted and the cream is heated through. Check the chicken is cooked through.",
+    "Turn off the heat and stir in the parmesan."
+  ]
+}

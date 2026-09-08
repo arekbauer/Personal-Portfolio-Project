@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { mediaUrl, recipes } from "../../lib/content";
+
+const categories = [...new Set(recipes.flatMap((recipe) => recipe.categories))].sort();
+---
+
+<BaseLayout title="Recipes | Arkadiusz Bauer" extraStylesheet="/static/recipes/css/recipes.css">
+  <main class="recipes-page">
+    <section class="recipes-hero container">
+      <p class="section-label">From my kitchen</p><h1 class="container-header">Recipes</h1>
+      <p class="recipes-intro">A collection of recipes I enjoy making.</p>
+    </section>
+    <section class="recipe-gallery-section">
+      <div class="container recipes-container">
+        <nav class="category-filters" aria-label="Filter recipes by category">
+          <button class="category-filter active" type="button" data-category="all">All recipes</button>
+          {categories.map((category) => <button class="category-filter" type="button" data-category={category}>{category}</button>)}
+        </nav>
+        <div class="recipe-grid">
+          {recipes.map((recipe) => (
+            <article class="recipe-card" data-categories={recipe.categories.join("|")}>
+              <a href={`/recipes/${recipe.slug}/`} class="recipe-card-image"><img src={mediaUrl(recipe.image)} alt={recipe.title} loading="lazy" decoding="async" width="800" height="600" /></a>
+              <div class="recipe-card-content">
+                <div class="recipe-card-meta">{recipe.categories.map((category) => <span>{category}</span>)}</div>
+                <h2><a href={`/recipes/${recipe.slug}/`}>{recipe.title}</a></h2>
+                <a href={`/recipes/${recipe.slug}/`} class="recipe-card-link">View recipe <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="recipes-empty" hidden><h2>No recipes here yet</h2><p>Try another category.</p></div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>("[data-category]");
+    const cards = document.querySelectorAll<HTMLElement>("[data-categories]");
+    const empty = document.querySelector<HTMLElement>(".recipes-empty");
+    const selectCategory = (button: HTMLButtonElement) => {
+      const selected = button.dataset.category;
+      buttons.forEach((item) => item.classList.toggle("active", item === button));
+      let visible = 0;
+      cards.forEach((card) => {
+        const show = selected === "all" || card.dataset.categories?.split("|").includes(selected ?? "");
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      if (empty) empty.hidden = visible !== 0;
+    };
+    buttons.forEach((button) => button.addEventListener("click", () => selectCategory(button)));
+    const requested = new URLSearchParams(window.location.search).get("category");
+    const initial = [...buttons].find((button) => button.dataset.category === requested);
+    if (initial) selectCategory(initial);
+  </script>
+</BaseLayout>
+
+<style>.category-filter { cursor: pointer; font-family: inherit; }</style>

@@ -1,0 +1,13 @@
+{
+  "title": "Cadence",
+  "description": "An Android app built to explore personal Spotify listening statistics and discover new music. Using the latest Android development technologies including Hilt, Room, and the official Spotify Android SDK.",
+  "image": "portfolio/images/cadence-single.png",
+  "url": "https://github.com/arekbauer/Cadence",
+  "skills": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Spotify API",
+    "Android"
+  ],
+  "order": 16
+}

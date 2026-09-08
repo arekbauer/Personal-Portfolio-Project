@@ -1,0 +1,9 @@
+{
+  "intros": [
+    {
+      "description": "I’m an <span>Android&nbsp;Consultant&nbsp;</span>at <span>Deloitte&nbsp;Digital</span>, engineering modern mobile applications using <span class=\"kotlin-cursor\">Kotlin</span> and  <span class=\"jetpack-cursor\">Jetpack Compose</span>, backed by a strong foundation in commercial test automation and CI/CD.\r\n<br><br>\r\nIn my own time, I design and ship independent projects like <span>FaceDown</span>, a native focus timer app designed to help people stay off their phones.\r\n<br><br>\r\nOutside of tech, I enjoy cooking and unwinding with games - at the moment, that's farming in  <span class=\"stardew-cursor\">Stardew Valley</span>.",
+      "image": "portfolio/images/profile_picture.jpg",
+      "image_small": "portfolio/images/profile_picture-square.jpg"
+    }
+  ]
+}
