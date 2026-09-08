@@ -454,6 +454,10 @@
 }
 
 @media (max-width: 560px) {
+    .ingredient-section-title:first-of-type {
+        margin-top: 1.75rem;
+    }
+
     .recipe-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1rem 0.85rem;

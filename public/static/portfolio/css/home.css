@@ -715,6 +715,10 @@ section {
 }
 
 @media (max-width: 560px) {
+    .container {
+        --bs-gutter-x: 0;
+    }
+
     .album-gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.4rem 0.85rem;
