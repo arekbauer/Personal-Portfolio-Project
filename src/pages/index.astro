@@ -33,14 +33,14 @@ import { mediaUrl, projects, site } from "../lib/content";
     </section>
 
     <section id="projects">
-      <div class="container projects-container d-flex flex-column">
-        <header class="mb-5">
+      <div class="container projects-container">
+        <header>
           <p class="section-label">Projects & experiments</p>
           <h1 class="container-header">Things I've Made</h1>
         </header>
-        <div class="row g-4">
+        <div class="projects-grid">
           {projects.map((project) => (
-            <div class="col-12 col-md-6 col-lg-4 project-card-wrapper">
+            <div class="project-card-wrapper">
               <article class="project-card">
                 <a href={project.url} target="_blank" rel="noopener noreferrer" class="project-image-link">
                   <img src={mediaUrl(project.image)} alt={project.title} />
