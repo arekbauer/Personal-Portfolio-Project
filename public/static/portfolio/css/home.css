@@ -138,6 +138,12 @@ a:hover {
     gap: 0.35rem;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
 .navbar a {
     color: var(--secondary-color);
     font-family: var(--body-font);
