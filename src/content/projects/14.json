@@ -1,0 +1,13 @@
+{
+  "title": "Portfolio Website",
+  "description": "This portfolio website was built using Django for the backend, showcasing who I am, my projects and my experiences.",
+  "image": "portfolio/images/personal-porfolio.png",
+  "url": "https://github.com/arekbauer/Personal-Portfolio-Project",
+  "skills": [
+    "Django",
+    "Python",
+    "JavaScript",
+    "Spotify API"
+  ],
+  "order": 14
+}

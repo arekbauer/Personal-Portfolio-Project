@@ -3,6 +3,9 @@
 
 # Node modules
 node_modules/
+dist/
+.astro/
+.wrangler/
 
 *.log
 *.pot

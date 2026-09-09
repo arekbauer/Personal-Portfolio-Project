@@ -1,9 +1,27 @@
 {
+  "name": "arekbauer-com",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "node --test recipes/tests_js/servings.test.cjs"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "wrangler pages dev dist --compatibility-date=2026-09-08",
+    "test": "node --test tests/*.test.mjs",
+    "new:recipe": "node scripts/new-content.mjs recipe",
+    "new:project": "node scripts/new-content.mjs project"
   },
   "dependencies": {
-    "isotope-layout": "^3.0.6",
-    "rough-notation": "^0.5.1"
+    "@astrojs/check": "^0.9.6",
+    "astro": "^7.3.2",
+    "rough-notation": "^0.5.1",
+    "typescript": "^5.9.3",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260908.1",
+    "wrangler": "^4.130.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

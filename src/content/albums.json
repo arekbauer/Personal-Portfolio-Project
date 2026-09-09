@@ -1,0 +1,172 @@
+[
+  {
+    "title": "From Me To You",
+    "artist": "Quadeca",
+    "featured": true,
+    "spotifyAlbumId": "5x71CvswpKjmgD2Gc7jRVU",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b27334588bd81207d67468b2f15f",
+    "spotifyUrl": "https://open.spotify.com/album/5x71CvswpKjmgD2Gc7jRVU",
+    "releaseDate": "2021-03-30",
+    "displayOrder": 0
+  },
+  {
+    "title": "hypochondriac",
+    "artist": "brakence",
+    "featured": true,
+    "spotifyAlbumId": "6XV76W17coHAKFdeyiGT08",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273cbf54392eca47bb30303db4c",
+    "spotifyUrl": "https://open.spotify.com/album/6XV76W17coHAKFdeyiGT08",
+    "releaseDate": "2022-12-02",
+    "displayOrder": 0
+  },
+  {
+    "title": "El Día que me Olvides",
+    "artist": "Walls",
+    "featured": true,
+    "spotifyAlbumId": "5dr5f9aeHuDORZXkJIQWGB",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b2732a149011bfbbe44d744affd1",
+    "spotifyUrl": "https://open.spotify.com/album/5dr5f9aeHuDORZXkJIQWGB",
+    "releaseDate": "2026-01-16",
+    "displayOrder": 0
+  },
+  {
+    "title": "Vanisher, Horizon Scraper",
+    "artist": "Quadeca",
+    "featured": true,
+    "spotifyAlbumId": "6o6VAIetIFOsaOa0qt7w9u",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273e09daa190c938f3fffbfe88a",
+    "spotifyUrl": "https://open.spotify.com/album/6o6VAIetIFOsaOa0qt7w9u",
+    "releaseDate": "2025-07-25",
+    "displayOrder": 0
+  },
+  {
+    "title": "Metamorphic",
+    "artist": "STAYC",
+    "featured": true,
+    "spotifyAlbumId": "6eTCq3XOz0rVJnelXro3Vk",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b2730cac27fa1830d50ff4a7a20d",
+    "spotifyUrl": "https://open.spotify.com/album/6eTCq3XOz0rVJnelXro3Vk",
+    "releaseDate": "2024-07-01",
+    "displayOrder": 0
+  },
+  {
+    "title": "Notatki z Marginesu",
+    "artist": "Young Igi",
+    "featured": true,
+    "spotifyAlbumId": "0yH9nM2sihHBFBhYCcamfu",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b27346bfc6220d47d8e3976dc4bd",
+    "spotifyUrl": "https://open.spotify.com/album/0yH9nM2sihHBFBhYCcamfu",
+    "releaseDate": "2022-11-17",
+    "displayOrder": 0
+  },
+  {
+    "title": "I Didn't Mean To Haunt You",
+    "artist": "Quadeca",
+    "featured": true,
+    "spotifyAlbumId": "3c0NHNo2Gn0X7uARad3hGv",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b27345f6c58341c281d50d622c5c",
+    "spotifyUrl": "https://open.spotify.com/album/3c0NHNo2Gn0X7uARad3hGv",
+    "releaseDate": "2022-11-10",
+    "displayOrder": 0
+  },
+  {
+    "title": "We're All Alone In This Together",
+    "artist": "Dave",
+    "featured": true,
+    "spotifyAlbumId": "6HwzIlrCDq3WF9vMq8meqG",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273da5b9c1eb275d48e14d25f3e",
+    "spotifyUrl": "https://open.spotify.com/album/6HwzIlrCDq3WF9vMq8meqG",
+    "releaseDate": "2021-07-22",
+    "displayOrder": 0
+  },
+  {
+    "title": "F*CK LOVE",
+    "artist": "The Kid LAROI",
+    "featured": true,
+    "spotifyAlbumId": "6RuwGwQcAureaOraKJNFQG",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273891f0552bed344dc2bfe322f",
+    "spotifyUrl": "https://open.spotify.com/album/6RuwGwQcAureaOraKJNFQG",
+    "releaseDate": "2020-07-24",
+    "displayOrder": 0
+  },
+  {
+    "title": "Heavy Is The Head",
+    "artist": "Stormzy",
+    "featured": true,
+    "spotifyAlbumId": "3y4AaloFccKNLQcZNS9L8c",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b27303bf634fe9526dfcc79f8526",
+    "spotifyUrl": "https://open.spotify.com/album/3y4AaloFccKNLQcZNS9L8c",
+    "releaseDate": "2019-12-13",
+    "displayOrder": 0
+  },
+  {
+    "title": "Hollywood's Bleeding",
+    "artist": "Post Malone",
+    "featured": true,
+    "spotifyAlbumId": "3KziODx7ieQTgYCVrS6nBv",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273bbf401121625a31ba1a6a4bb",
+    "spotifyUrl": "https://open.spotify.com/album/3KziODx7ieQTgYCVrS6nBv",
+    "releaseDate": "2019-09-06",
+    "displayOrder": 0
+  },
+  {
+    "title": "Legendary (Deluxe Edition)",
+    "artist": "Tyga",
+    "featured": true,
+    "spotifyAlbumId": "1dDfjR6KqXwa6I8XmPXnxr",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b2732b52a027f022c637db02b317",
+    "spotifyUrl": "https://open.spotify.com/album/1dDfjR6KqXwa6I8XmPXnxr",
+    "releaseDate": "2019-08-23",
+    "displayOrder": 0
+  },
+  {
+    "title": "!G! TAPE#1",
+    "artist": "Young Igi",
+    "featured": true,
+    "spotifyAlbumId": "6cNl94l5FPM0zqYFjtwyOV",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273cd3a333e661599ce2ed46bec",
+    "spotifyUrl": "https://open.spotify.com/album/6cNl94l5FPM0zqYFjtwyOV",
+    "releaseDate": "2019-04-18",
+    "displayOrder": 0
+  },
+  {
+    "title": "Café Belga",
+    "artist": "Taco Hemingway",
+    "featured": true,
+    "spotifyAlbumId": "3cNSfvMTPQGNXNlqCioKE1",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273d06a4a3bf562cc84a32d82fe",
+    "spotifyUrl": "https://open.spotify.com/album/3cNSfvMTPQGNXNlqCioKE1",
+    "releaseDate": "2018-07-13",
+    "displayOrder": 0
+  },
+  {
+    "title": "beerbongs & bentleys",
+    "artist": "Post Malone",
+    "featured": true,
+    "spotifyAlbumId": "6trNtQUgC8cgbWcqoMYkOR",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268",
+    "spotifyUrl": "https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR",
+    "releaseDate": "2018-04-27",
+    "displayOrder": 0
+  },
+  {
+    "title": "AitcH2O",
+    "artist": "Aitch",
+    "featured": true,
+    "spotifyAlbumId": "4lyOYAUAPXImW4OCQT2wiP",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b27381225a59e7637e4fd6eba839",
+    "spotifyUrl": "https://open.spotify.com/album/4lyOYAUAPXImW4OCQT2wiP",
+    "releaseDate": "2019-09-06",
+    "displayOrder": 0
+  },
+  {
+    "title": "SCRAPYARD",
+    "artist": "Quadeca",
+    "featured": true,
+    "spotifyAlbumId": "1S9MukUQEFAYCqlfrwqMd6",
+    "coverImageUrl": "https://i.scdn.co/image/ab67616d0000b273b92209ad9a4f25e73ad18c2c",
+    "spotifyUrl": "https://open.spotify.com/album/1S9MukUQEFAYCqlfrwqMd6",
+    "releaseDate": "2024-02-16",
+    "displayOrder": 0
+  }
+]

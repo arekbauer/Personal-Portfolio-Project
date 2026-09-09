@@ -1,0 +1,156 @@
+{
+  "title": "Korean Beef Bibimbap",
+  "slug": "korean-beef-bibimbap",
+  "image": "recipes/images/korean-beef-bibimbap.webp",
+  "baseServings": 4,
+  "imageCredit": "Sous Chef / CC BY 2.0 (resized)",
+  "imageCreditUrl": "https://commons.wikimedia.org/wiki/File:Dolsot-bibimbap.jpg",
+  "sourceName": "Source",
+  "sourceUrl": "https://www.youtube.com/watch?v=olK8IrYgS0c&t=5s",
+  "categories": [
+    "Dinner",
+    "Korean"
+  ],
+  "ingredients": [
+    {
+      "amount": 500,
+      "unit": "g",
+      "name": "ground beef",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": 80,
+      "unit": "ml",
+      "name": "soy sauce",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "name": "sesame oil",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": 25,
+      "unit": "ml",
+      "name": "rice vinegar",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": 2,
+      "unit": "tbsp",
+      "name": "brown sugar",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "ginger",
+      "note": "about 1 tbsp, grated",
+      "section": "Beef"
+    },
+    {
+      "amount": 2,
+      "unit": "cloves",
+      "name": "garlic",
+      "note": "minced",
+      "section": "Beef"
+    },
+    {
+      "amount": 1,
+      "unit": "tbsp",
+      "name": "gochujang",
+      "note": "",
+      "section": "Beef"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "cooked rice",
+      "note": "for serving",
+      "section": "Toppings"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "fried eggs",
+      "note": "for serving",
+      "section": "Toppings"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "spring onions",
+      "note": "sliced",
+      "section": "Toppings"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "cucumber",
+      "note": "optional, sliced",
+      "section": "Toppings"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "spinach",
+      "note": "optional, cooked",
+      "section": "Toppings"
+    },
+    {
+      "amount": 5,
+      "unit": "tbsp",
+      "name": "gochujang",
+      "note": "",
+      "section": "Bibimbap sauce"
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "name": "water",
+      "note": "",
+      "section": "Bibimbap sauce"
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "name": "sugar",
+      "note": "",
+      "section": "Bibimbap sauce"
+    },
+    {
+      "amount": 15,
+      "unit": "ml",
+      "name": "sesame oil",
+      "note": "",
+      "section": "Bibimbap sauce"
+    },
+    {
+      "amount": 1,
+      "unit": "clove",
+      "name": "garlic",
+      "note": "chopped",
+      "section": "Bibimbap sauce"
+    },
+    {
+      "amount": 0.5,
+      "unit": "tbsp",
+      "name": "ginger",
+      "note": "chopped",
+      "section": "Bibimbap sauce"
+    }
+  ],
+  "steps": [
+    "Make the bibimbap sauce by stirring together the gochujang, water, sugar, salt, sesame oil, chopped garlic and ginger until smooth. Set aside.",
+    "Combine the soy sauce, sesame oil, rice vinegar, brown sugar, ginger, garlic and gochujang for the beef.",
+    "Brown the ground beef in a large frying pan over medium-high heat, breaking it into small pieces. Drain any excess fat, add the beef sauce and cook until glossy and reduced.",
+    "Prepare the rice and toppings. Fry the eggs, slice the spring onions and cucumber, and cook the spinach if using.",
+    "Divide the rice between four bowls. Arrange the beef and toppings over the rice, add a fried egg and serve with the bibimbap sauce. Mix everything together before eating."
+  ]
+}

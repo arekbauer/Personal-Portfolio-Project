@@ -1,0 +1,13 @@
+{
+  "title": "Automated Event Planner",
+  "description": "A Python tool that that automates the creation of events for VALORANT tournaments and Pokémon Go events using the Google Calendar API, with automated scheduling.",
+  "image": "portfolio/images/googleCalendar_a2BIeDY.png",
+  "url": "https://github.com/arekbauer/calendar-project",
+  "skill3": null,
+  "skill4": null,
+  "skills": [
+    "Python",
+    "REST APIs"
+  ],
+  "order": 3
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Booklio",
+  "description": "An Android app that gamifies reading using XP, medals, leaderboards, and streaks. Features Firebase integration, Google Books API, and a responsive UI with Jetpack Compose.",
+  "image": "portfolio/images/booklio-single.png",
+  "url": "https://play.google.com/store/apps/details?id=com.arekb.booklio&hl=en_GB",
+  "skills": [
+    "Kotlin",
+    "Jetpack Compose",
+    "Firebase",
+    "Android"
+  ],
+  "order": 15
+}

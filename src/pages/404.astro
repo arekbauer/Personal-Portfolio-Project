@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Page not found | Arkadiusz Bauer">
+  <main class="not-found"><p class="section-label">404</p><h1>Page not found</h1><p>The page may have moved or no longer exists.</p><a href="/">Go back home</a></main>
+</BaseLayout>
+
+<style>
+  .not-found { min-height: 80vh; display: grid; place-content: center; justify-items: center; gap: 1rem; padding: 8rem 1rem 3rem; text-align: center; }
+  h1 { font: 800 clamp(3rem, 9vw, 7rem)/.95 var(--heading-font); }
+  p { color: var(--secondary-color); }
+  a { background: var(--accent-container); border-radius: 999px; color: var(--accent-on-container); font-weight: 750; padding: .75rem 1rem; }
+</style>

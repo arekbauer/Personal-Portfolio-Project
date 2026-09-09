@@ -1,0 +1,78 @@
+{
+  "title": "Creamy Bacon & Mushroom Pasta",
+  "slug": "creamy-bacon-mushroom-pasta",
+  "image": "recipes/images/creamy-bacon-mushroom-pasta.webp",
+  "baseServings": 4,
+  "imageCredit": "",
+  "imageCreditUrl": "",
+  "sourceName": "Philadelphia recipe",
+  "sourceUrl": "https://www.philadelphia.eu/uk/recipes/creamy-bacon-mushroom-pasta-38655/",
+  "categories": [
+    "Dinner",
+    "Pasta",
+    "Quick"
+  ],
+  "ingredients": [
+    {
+      "amount": 300,
+      "unit": "g",
+      "name": "fusilli pasta twists",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 1,
+      "unit": "tsp",
+      "name": "oil",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 4,
+      "unit": "rashers",
+      "name": "back bacon",
+      "note": "cut into strips",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 75,
+      "unit": "g",
+      "name": "mushrooms",
+      "note": "sliced",
+      "section": "Ingredients"
+    },
+    {
+      "amount": null,
+      "unit": "",
+      "name": "salt and black pepper",
+      "note": "to taste",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 100,
+      "unit": "g",
+      "name": "peas",
+      "note": "defrosted",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 120,
+      "unit": "g",
+      "name": "Philadelphia with Garlic & Herbs",
+      "note": "",
+      "section": "Ingredients"
+    },
+    {
+      "amount": 5,
+      "unit": "tbsp",
+      "name": "milk",
+      "note": "",
+      "section": "Ingredients"
+    }
+  ],
+  "steps": [
+    "Cook the pasta according to the packet instructions. While it cooks, heat the oil in a saucepan and fry the bacon and mushrooms until browned. Season with salt and black pepper.",
+    "Reduce the heat to low. Add the peas, Philadelphia and milk, then stir until the Philadelphia melts into a creamy sauce.",
+    "Drain the pasta and divide it between four serving bowls. Spoon the bacon and mushroom sauce over the top."
+  ]
+}

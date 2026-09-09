@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { mediaUrl, slabs } from "../lib/content";
+---
+
+<BaseLayout title="Slabs | Arkadiusz Bauer" extraStylesheet="/static/portfolio/css/pokemon-binder.css">
+  <main class="binder-page">
+    <section class="binder-hero container"><p class="section-label">My collection</p><h1 class="container-header">Slabs</h1><p class="binder-intro">A small shelf of graded cards I like owning and looking at.</p></section>
+    <section class="binder-section slab-section">
+      <div class="container binder-container">
+        <div class="slab-grid">
+          {slabs.map((slab) => (
+            <article class="slab-card">
+              <figure class="slab-image-frame"><img src={mediaUrl(slab.image)} alt={`${slab.name} graded slab`} loading="lazy" /></figure>
+              <div class="slab-content">
+                <h3>{slab.name}</h3><p>{slab.setName}{slab.number && ` #${slab.number}`}</p>
+                <dl class="slab-meta">
+                  <div><dt>Grade</dt><dd>{slab.grader} {slab.grade}</dd></div>
+                  {slab.rarity && <div><dt>Rarity</dt><dd>{slab.rarity}</dd></div>}
+                  {slab.certificationNumber && <div><dt>Cert</dt><dd>{slab.certificationNumber}</dd></div>}
+                </dl>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
