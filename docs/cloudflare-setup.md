@@ -3,40 +3,6 @@
 This is the complete first-time setup for moving `www.arekbauer.com` from
 PythonAnywhere to Cloudflare Pages.
 
-The intended arrangement is:
-
-- Porkbun remains the domain registrar. The domain does not need to be
-  transferred.
-- Cloudflare Free becomes the DNS provider and hosts the website.
-- GitHub remains the source of truth.
-- A push to a branch creates a preview deployment.
-- A push to `main` updates the live website after the migration is complete.
-- Secret API credentials live in Cloudflare, not in GitHub.
-
-No paid Cloudflare plan, database product, storage product, or payment card is
-required for this website. Do not cancel PythonAnywhere until the final checks
-in this document have passed.
-
-## Before starting
-
-Do not push the migration branch until the public-repository review items have
-been resolved:
-
-1. Strip metadata from the public portrait and Booklio images.
-2. Confirm that every recipe image can legally be republished, replacing any
-   image whose licence or ownership is uncertain.
-3. Change the password represented by the old Django password hash if that
-   password was used anywhere else.
-
-Also have access to all of the following:
-
-- The email account that will own the Cloudflare account.
-- The GitHub account that owns or can administer the repository.
-- The Porkbun account that manages `arekbauer.com`.
-- The existing Spotify credentials, ideally from the local ignored `.env`
-  file or the PythonAnywhere configuration.
-- A password manager in which to save recovery codes.
-
 ## Phase 1: Create and secure the Cloudflare account
 
 1. Open <https://dash.cloudflare.com/sign-up>.
