@@ -93,6 +93,26 @@ The branch has to exist on GitHub before Cloudflare can select it.
 8. Return to Cloudflare and select the portfolio repository.
 9. Select **Begin setup**.
 
+Before continuing, confirm that this is the **Pages** setup form. The correct
+form asks for a production branch, framework preset, build command, build
+output directory, and root directory. It does not ask for a deploy command or
+a version/non-production deploy command.
+
+If the form contains either of these defaults, go back because Cloudflare has
+opened the **Workers Builds** wizard instead:
+
+```text
+Deploy command: npx wrangler deploy
+Version or non-production command: npx wrangler versions upload
+```
+
+Those commands deploy a Worker script and are not valid for this Pages
+project. Return to **Workers & Pages → Create application**, explicitly select
+the **Pages** tab, and choose the Pages Git integration. Do not work around the
+wrong wizard by changing the deploy command to `wrangler pages deploy`; that
+would create a different Direct Upload workflow instead of the intended native
+Pages Git integration.
+
 Use these exact project values:
 
 | Cloudflare option | Value |
@@ -472,6 +492,15 @@ deployment still uses the old commit, so trigger a fresh deployment from the
 migration branch by pushing a new commit to it. Confirm the new deployment
 details show both the migration branch and its latest commit before evaluating
 the build log.
+
+### The form asks for a deploy command or version command
+
+This is the Workers Builds setup, not the Pages Git-integration setup. Do not
+use `npx wrangler deploy` or `npx wrangler versions upload`. If the incorrect
+application has already been created and has no custom domain, remove that
+Cloudflare application, then create a new application from the **Pages** tab
+and choose the Pages Git integration. A Pages Git build uploads the configured
+`dist` output automatically and therefore has no deploy-command field.
 
 ### The site works but an API says configuration is missing
 
